@@ -65,16 +65,16 @@ export type ProcessContent = {
 export type ProjectsContent = {
   title: string;
   intro: string;
-  exampleBadge: string;
+  visitLabel: string;
+  newTabLabel: string;
   items: {
     title: string;
-    category: string;
-    year: string;
-    image: string;
-    alt: string;
-    href?: string;
-    /** true while the project is a placeholder and not a real client */
-    isExample: boolean;
+    /** Shown under the title, e.g. "Web corporativa · 2026". Optional. */
+    category?: string;
+    href: string;
+    /** Screenshot in /public/projects (1600 x 1000 px). Without it, a branded card is shown. */
+    image?: string;
+    alt?: string;
   }[];
 };
 
@@ -82,7 +82,6 @@ export type PlansContent = {
   title: string;
   intro: string;
   recommendedBadge: string;
-  fromLabel: string;
   note: string;
   cta: string;
   items: {

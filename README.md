@@ -49,13 +49,15 @@ public/
 
 No hace falta tocar componentes: todo el texto está en `src/content/es/`.
 
-- **Precios, planes, servicios, FAQ, proyectos y testimonios:** `src/content/es/home.ts`
+- **Planes, servicios, FAQ, proyectos y testimonios:** `src/content/es/home.ts`
 - **Email, teléfono, ciudad, redes sociales y navegación:** `src/content/es/site.ts`
 - **Textos legales:** `src/content/es/legal.ts`
 
 Busca `[PLACEHOLDER]` y `[COMPLETAR]` en el proyecto para encontrar todo lo que debes sustituir.
 
-**Proyectos:** pon tus imágenes en `public/projects/` (recomendado 1600 × 1000 px, `.webp`), actualiza `projects.items` en `home.ts` y cambia `isExample` a `false` para quitar la etiqueta «Proyecto de ejemplo». Si añades `href`, la tarjeta enlazará al proyecto.
+**Proyectos:** la sección muestra las webs de `projects.items` en `home.ts` (nombre y enlace). Mientras no tengan captura se ve una tarjeta con el nombre y el dominio. Para mostrar la web real, guarda una captura en `public/projects/` (1600 × 1000 px, `.webp`) y añade `image: "/projects/nombre.webp"` y `alt` al proyecto. Opcionalmente, `category` (p. ej. «Web corporativa · 2026») sustituye al dominio bajo el título.
+
+**Planes:** todos muestran «Precio personalizado». Cambia el texto en `plans.items[].price` si algún día quieres mostrar precios.
 
 **Testimonios:** sustituye los textos en `testimonials.items` y pon `isExample: false`.
 

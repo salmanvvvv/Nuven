@@ -118,63 +118,33 @@ export const process: ProcessContent = {
   ],
 };
 
-// [PLACEHOLDER] Sustituye estos proyectos por trabajos reales y pon isExample: false.
-// Las imágenes están en /public/projects. Recomendado: 1600 x 1000 px en .webp
+// Webs de referencia. Para mostrar una captura, añade la imagen en /public/projects
+// (1600 x 1000 px, .webp) y rellena `image` y `alt`. Puedes añadir `category`, p. ej. "Web corporativa · 2026".
 export const projects: ProjectsContent = {
-  title: "Proyectos",
-  intro:
-    "Una selección de webs diseñadas y desarrolladas por el equipo. Pronto, también la tuya.",
-  exampleBadge: "Proyecto de ejemplo",
+  title: "Webs que ya hemos lanzado.",
+  intro: "Algunos de los proyectos que hemos diseñado y desarrollado. Entra y pruébalos tú mismo.",
+  visitLabel: "Visitar web",
+  newTabLabel: "se abre en una pestaña nueva",
   items: [
-    {
-      title: "Estudio de arquitectura",
-      category: "Web corporativa",
-      year: "2026",
-      image: "/projects/proyecto-1.webp",
-      alt: "Captura de ejemplo de una web corporativa para un estudio de arquitectura",
-      isExample: true,
-    },
-    {
-      title: "Marca de cosmética natural",
-      category: "Tienda online",
-      year: "2026",
-      image: "/projects/proyecto-2.webp",
-      alt: "Captura de ejemplo de una tienda online de cosmética",
-      isExample: true,
-    },
-    {
-      title: "Clínica de fisioterapia",
-      category: "Web y reservas",
-      year: "2026",
-      image: "/projects/proyecto-3.webp",
-      alt: "Captura de ejemplo de la web de una clínica con sistema de reservas",
-      isExample: true,
-    },
-    {
-      title: "Startup de software",
-      category: "Landing page",
-      year: "2025",
-      image: "/projects/proyecto-4.webp",
-      alt: "Captura de ejemplo de una landing page para una startup",
-      isExample: true,
-    },
+    { title: "Brico Home Services", href: "https://bricohomeservices.com/" },
+    { title: "Work Armor", href: "https://workarmor.es/" },
+    { title: "Self Mapping Lab", href: "https://self-mapping-lab.lovable.app/" },
   ],
 };
 
-// [PLACEHOLDER] Ajusta precios y contenido de cada plan.
+// Ajusta el contenido de cada plan. Todos los precios son personalizados.
 export const plans: PlansContent = {
-  title: "Planes con precio cerrado.",
+  title: "Planes a la medida de tu proyecto.",
   intro:
-    "Sabrás lo que pagas desde el principio. Si tu proyecto no encaja en ningún plan, te preparamos un presupuesto a medida.",
+    "Cada negocio necesita algo distinto, así que cada presupuesto también. Elige el punto de partida que más se parece a lo tuyo y te preparamos un precio cerrado.",
   recommendedBadge: "Recomendado",
-  fromLabel: "Desde",
-  note: "Precios orientativos sin IVA. El presupuesto final depende del alcance de tu proyecto.",
+  note: "Todos los presupuestos son personalizados, cerrados y sin compromiso. Te lo enviamos después de una primera llamada para conocer tu proyecto.",
   cta: "Solicitar presupuesto",
   items: [
     {
       name: "Esencial",
-      price: "790 €", // [PLACEHOLDER]
-      priceSuffix: "pago único",
+      price: "Precio personalizado",
+      priceSuffix: "Presupuesto cerrado y sin compromiso",
       description: "Para autónomos y negocios que necesitan una presencia profesional cuanto antes.",
       features: [
         "Web de hasta 5 secciones",
@@ -186,8 +156,8 @@ export const plans: PlansContent = {
     },
     {
       name: "Profesional",
-      price: "1.690 €", // [PLACEHOLDER]
-      priceSuffix: "pago único",
+      price: "Precio personalizado",
+      priceSuffix: "Presupuesto cerrado y sin compromiso",
       description: "Para negocios que quieren captar clientes de forma constante desde su web.",
       features: [
         "Web de hasta 10 páginas",
@@ -201,8 +171,8 @@ export const plans: PlansContent = {
     },
     {
       name: "Premium",
-      price: "3.200 €", // [PLACEHOLDER]
-      priceSuffix: "pago único",
+      price: "Precio personalizado",
+      priceSuffix: "Presupuesto cerrado y sin compromiso",
       description: "Para tiendas online y proyectos con necesidades a medida.",
       features: [
         "Tienda online o funcionalidades a medida",
@@ -254,7 +224,7 @@ export const faq: FaqContent = {
     },
     {
       q: "¿Cuánto cuesta una web?",
-      a: "Nuestros planes parten de los precios que ves en la sección de planes. Tras una primera llamada te enviamos un presupuesto cerrado, sin costes ocultos.",
+      a: "Depende de lo que necesites, por eso todos nuestros presupuestos son personalizados. Tras una primera llamada te enviamos un precio cerrado, sin costes ocultos ni compromiso.",
     },
     {
       q: "¿Os encargáis del dominio y el hosting?",

@@ -35,11 +35,8 @@ export function Plans({ content }: { content: PlansContent }) {
               <p className="mt-3 min-h-[3lh] text-[0.9375rem] leading-relaxed text-muted lg:min-h-[4.5lh] xl:min-h-[3lh]">
                 {plan.description}
               </p>
-              <p className="mt-8 flex items-baseline gap-2">
-                <span className="text-[0.875rem] text-muted">{content.fromLabel}</span>
-                <span className="font-display text-[2.75rem] leading-none font-semibold tracking-[-0.04em] tabular-nums">
-                  {plan.price}
-                </span>
+              <p className="mt-8 font-display text-[1.875rem] leading-tight font-semibold tracking-[-0.035em]">
+                {plan.price}
               </p>
               <p className="mt-2 text-[0.8125rem] text-subtle">{plan.priceSuffix}</p>
               <ul className="mt-8 flex-1 space-y-3.5 border-t border-line pt-8">
