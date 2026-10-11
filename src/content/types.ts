@@ -97,7 +97,10 @@ export type PlansContent = {
 export type TestimonialsContent = {
   title: string;
   exampleBadge: string;
-  items: { quote: string; name: string; role: string; isExample: boolean }[];
+  /** Shown instead of a name for anonymous testimonials. */
+  anonymousLabel: string;
+  /** `name` is optional: leave it out to publish the testimonial anonymously. */
+  items: { quote: string; name?: string; role: string; isExample: boolean }[];
 };
 
 export type FaqContent = {

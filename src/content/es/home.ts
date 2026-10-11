@@ -203,31 +203,30 @@ export const plans: PlansContent = {
   ],
 };
 
-// [PLACEHOLDER] Sustituye por testimonios reales (con permiso del cliente) y pon isExample: false.
+// Testimonios reales de clientes, publicados de forma anónima (sin nombre).
+// Para firmar uno, añade `name: "Nombre Apellido"`.
 export const testimonials: TestimonialsContent = {
   title: "Lo que dicen quienes ya trabajan con nosotros.",
   exampleBadge: "Testimonio de ejemplo",
+  anonymousLabel: "Cliente de Nuven",
   items: [
     {
       quote:
-        "Texto de ejemplo. Aquí irá la opinión de un cliente real sobre cómo ha cambiado su negocio desde que tiene la nueva web.",
-      name: "Nombre Apellido",
-      role: "Cargo, Empresa",
-      isExample: true,
+        "Buscábamos una web que transmitiera mejor la calidad de nuestro trabajo y nos ayudara a conseguir nuevos clientes. Desde el primer momento entendieron lo que necesitábamos y el resultado nos ha gustado mucho. La web es moderna, fácil de navegar y muestra nuestros proyectos de una forma mucho más profesional. Estamos muy contentos con el resultado.",
+      role: "Empresa de reformas",
+      isExample: false,
     },
     {
       quote:
-        "Texto de ejemplo. Un buen testimonio menciona un resultado concreto: más contactos, más ventas o menos tiempo perdido.",
-      name: "Nombre Apellido",
-      role: "Cargo, Empresa",
-      isExample: true,
+        "Queríamos renovar nuestra tienda online para que comprar fuera mucho más fácil para nuestros clientes. La experiencia ha sido muy buena, porque nos han ayudado a organizar mejor los productos y a conseguir una web mucho más clara y visual. Ahora es más sencillo encontrar cada modelo y consultar sus características. Sin duda, ha sido un paso importante para nuestro negocio.",
+      role: "Tienda online",
+      isExample: false,
     },
     {
       quote:
-        "Texto de ejemplo. Pide a tus clientes dos o tres frases sinceras sobre el proceso y el resultado final.",
-      name: "Nombre Apellido",
-      role: "Cargo, Empresa",
-      isExample: true,
+        "Necesitábamos una web que estuviera a la altura de nuestra tecnología y que explicara de forma sencilla todo lo que hacemos. Han sabido plasmar muy bien nuestra idea, con un diseño limpio, moderno y una estructura que facilita entender nuestra propuesta de valor. Nos ha gustado especialmente cómo han conseguido transmitir un concepto complejo de una manera mucho más accesible y profesional.",
+      role: "Empresa tecnológica",
+      isExample: false,
     },
   ],
 };

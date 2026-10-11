@@ -59,7 +59,7 @@ Busca `[PLACEHOLDER]` y `[COMPLETAR]` en el proyecto para encontrar todo lo que 
 
 **Planes:** todos muestran «Precio personalizado». Cambia el texto en `plans.items[].price` si algún día quieres mostrar precios.
 
-**Testimonios:** sustituye los textos en `testimonials.items` y pon `isExample: false`.
+**Testimonios:** están en `testimonials.items`. Se publican de forma anónima (aparece «Cliente de Nuven» y el tipo de negocio); para firmar uno, añade `name`.
 
 **Añadir inglés más adelante:** crea `src/content/en/` con la misma forma que `es` (el tipo `Dictionary` te avisará de lo que falte) y regístralo en `src/content/index.ts`. Después, añade un segmento `[locale]` en `src/app`.
 
