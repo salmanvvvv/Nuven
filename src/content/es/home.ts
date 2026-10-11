@@ -126,9 +126,27 @@ export const projects: ProjectsContent = {
   visitLabel: "Visitar web",
   newTabLabel: "se abre en una pestaña nueva",
   items: [
-    { title: "Brico Home Services", href: "https://bricohomeservices.com/" },
-    { title: "Work Armor", href: "https://workarmor.es/" },
-    { title: "Self Mapping Lab", href: "https://self-mapping-lab.lovable.app/" },
+    {
+      title: "Brico Home Services",
+      category: "Reformas y reparaciones · Roses, Girona",
+      href: "https://bricohomeservices.com/",
+      image: "/projects/brico-home-services.webp",
+      alt: "Portada de la web de Brico Home Services, empresa de reformas en Roses y la provincia de Girona",
+    },
+    {
+      title: "Work Armor",
+      category: "Tienda online · Calzado de trabajo",
+      href: "https://workarmor.es/",
+      image: "/projects/workarmor.webp",
+      alt: "Portada de la tienda online de Work Armor con zapatillas de trabajo con puntera de acero",
+    },
+    {
+      title: "MindMap",
+      category: "Aplicación web",
+      href: "https://self-mapping-lab.lovable.app/",
+      image: "/projects/mindmap.webp",
+      alt: "Portada de MindMap, una aplicación web de autoconocimiento",
+    },
   ],
 };
 

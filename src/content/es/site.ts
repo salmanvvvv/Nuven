@@ -12,9 +12,9 @@ export const site: SiteContent = {
   city: "Madrid", // [PLACEHOLDER] Ciudad
   country: "ES",
   nav: [
+    { label: "Proyectos", href: "/#proyectos" },
     { label: "Servicios", href: "/#servicios" },
     { label: "Proceso", href: "/#proceso" },
-    { label: "Proyectos", href: "/#proyectos" },
     { label: "Planes", href: "/#planes" },
     { label: "FAQ", href: "/#faq" },
     { label: "Contacto", href: "/#contacto" },

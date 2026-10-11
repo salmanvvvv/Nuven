@@ -42,7 +42,7 @@ export function Projects({ content }: { content: ProjectsContent }) {
     <section id="proyectos" aria-labelledby="proyectos-title" className="border-t border-line py-24 sm:py-32">
       <Container>
         <SectionHeader id="proyectos-title" title={content.title} intro={content.intro} />
-        <ul className="grid gap-x-6 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
+        <ul className="grid gap-x-6 gap-y-12 md:grid-cols-2">
           {content.items.map((project, i) => {
             const domain = domainOf(project.href);
             return (
@@ -50,7 +50,7 @@ export function Projects({ content }: { content: ProjectsContent }) {
                 as="li"
                 key={project.href}
                 delay={i * 0.08}
-                className={cn("group", i === 0 && "md:col-span-2 lg:col-span-1")}
+                className={cn("group", i === 0 && "md:col-span-2")}
               >
                 <a
                   href={project.href}
@@ -62,7 +62,7 @@ export function Projects({ content }: { content: ProjectsContent }) {
                   <div
                     className={cn(
                       "relative overflow-hidden rounded-2xl border border-line bg-surface transition-[border-color,transform] duration-500 ease-[var(--ease-out-soft)] group-hover:-translate-y-1 group-hover:border-line-strong",
-                      i === 0 ? "aspect-[16/10] md:aspect-[21/9] lg:aspect-[16/10]" : "aspect-[16/10]",
+                      i === 0 ? "aspect-[16/10] md:aspect-[2/1]" : "aspect-[16/10]",
                     )}
                   >
                     {project.image ? (
@@ -70,7 +70,7 @@ export function Projects({ content }: { content: ProjectsContent }) {
                         src={project.image}
                         alt={project.alt ?? ""}
                         fill
-                        sizes="(min-width: 1240px) 400px, (min-width: 768px) 50vw, 100vw"
+                        sizes={i === 0 ? "(min-width: 1240px) 1200px, 100vw" : "(min-width: 1240px) 600px, (min-width: 768px) 50vw, 100vw"}
                         className="object-cover object-top transition-[transform,filter] duration-700 ease-[var(--ease-out-soft)] group-hover:scale-[1.03] group-hover:brightness-110"
                       />
                     ) : (
@@ -79,8 +79,8 @@ export function Projects({ content }: { content: ProjectsContent }) {
                   </div>
                   <div className="mt-5 flex items-start justify-between gap-6">
                     <div className="min-w-0">
-                      <h3 className="text-xl font-medium tracking-[-0.02em]">{project.title}</h3>
-                      <p className="mt-1.5 truncate text-[0.875rem] text-muted">{project.category ?? domain}</p>
+                      <h3 className={cn("font-medium tracking-[-0.02em]", i === 0 ? "text-2xl" : "text-xl")}>{project.title}</h3>
+                      <p className="mt-1.5 text-[0.875rem] text-muted">{project.category ?? domain}</p>
                     </div>
                     <span className="mt-1 inline-flex shrink-0 items-center gap-1.5 text-[0.8125rem] text-muted transition-colors duration-300 group-hover:text-fg">
                       {content.visitLabel}

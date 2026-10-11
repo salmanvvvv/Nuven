@@ -55,7 +55,7 @@ No hace falta tocar componentes: todo el texto está en `src/content/es/`.
 
 Busca `[PLACEHOLDER]` y `[COMPLETAR]` en el proyecto para encontrar todo lo que debes sustituir.
 
-**Proyectos:** la sección muestra las webs de `projects.items` en `home.ts` (nombre y enlace). Mientras no tengan captura se ve una tarjeta con el nombre y el dominio. Para mostrar la web real, guarda una captura en `public/projects/` (1600 × 1000 px, `.webp`) y añade `image: "/projects/nombre.webp"` y `alt` al proyecto. Opcionalmente, `category` (p. ej. «Web corporativa · 2026») sustituye al dominio bajo el título.
+**Proyectos:** la sección (justo después del hero) muestra las webs de `projects.items` en `home.ts`. Mientras no tengan captura se ve una tarjeta con el nombre y el dominio. Para mostrar la web real, guarda una captura en `public/projects/` (1600 × 1000 px, `.webp`) y añade `image: "/projects/nombre.webp"` y `alt` al proyecto. Opcionalmente, `category` (p. ej. «Web corporativa · 2026») sustituye al dominio bajo el título.
 
 **Planes:** todos muestran «Precio personalizado». Cambia el texto en `plans.items[].price` si algún día quieres mostrar precios.
 

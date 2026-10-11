@@ -19,10 +19,10 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd()).replace(/</g, "\\u003c") }}
       />
       <Hero content={t.hero} />
+      <Projects content={t.projects} />
       <Value content={t.value} />
       <Services content={t.services} />
       <Process content={t.process} />
-      <Projects content={t.projects} />
       <Plans content={t.plans} />
       <Testimonials content={t.testimonials} />
       <Faq content={t.faq} />
