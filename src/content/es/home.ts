@@ -16,7 +16,7 @@ export const hero: HeroContent = {
     "Diseñamos y desarrollamos la web de tu negocio a medida: rápida, clara y pensada para que quien llegue acabe escribiéndote.",
   primaryCta: "Solicitar presupuesto",
   secondaryCta: "Ver proyectos",
-  facts: ["Diseño 100 % a medida", "Entrega en 2 a 6 semanas", "Trato directo, sin intermediarios"],
+  facts: ["Diseño 100 % a medida", "Entrega en 1 a 3 semanas", "Trato directo, sin intermediarios"],
 };
 
 export const value: ValueContent = {
@@ -97,22 +97,22 @@ export const process: ProcessContent = {
   steps: [
     {
       title: "Descubrimiento",
-      duration: "Semana 1",
+      duration: "Primeros días",
       text: "Una llamada para entender tu negocio, tus clientes y tus objetivos. Con eso definimos la estructura y una propuesta cerrada.",
     },
     {
       title: "Diseño",
-      duration: "Semanas 1 a 3",
+      duration: "Semana 1",
       text: "Diseñamos las páginas clave y las revisamos contigo. Ajustamos hasta que la web transmita exactamente lo que buscas.",
     },
     {
       title: "Desarrollo",
-      duration: "Semanas 2 a 5",
+      duration: "Semanas 1 a 3",
       text: "Convertimos el diseño en una web rápida, accesible y optimizada para buscadores, que podrás revisar en un enlace privado.",
     },
     {
       title: "Lanzamiento y soporte",
-      duration: "A partir de la semana 4",
+      duration: "Al terminar el desarrollo",
       text: "Publicamos la web, configuramos dominio y analítica, y te enseñamos a gestionarla. Seguimos a tu lado después.",
     },
   ],
@@ -121,8 +121,8 @@ export const process: ProcessContent = {
 // Webs de referencia. Para mostrar una captura, añade la imagen en /public/projects
 // (1600 x 1000 px, .webp) y rellena `image` y `alt`. Puedes añadir `category`, p. ej. "Web corporativa · 2026".
 export const projects: ProjectsContent = {
-  title: "Webs que ya hemos lanzado.",
-  intro: "Algunos de los proyectos que hemos diseñado y desarrollado. Entra y pruébalos tú mismo.",
+  title: "Algunas de las webs que ya hemos lanzado.",
+  intro: "Diseñadas y desarrolladas por nuestro equipo. Entra y pruébalas tú mismo.",
   visitLabel: "Visitar web",
   newTabLabel: "se abre en una pestaña nueva",
   items: [
@@ -169,7 +169,7 @@ export const plans: PlansContent = {
         "Diseño responsive a medida",
         "Formulario de contacto",
         "SEO básico y Google Business",
-        "Entrega en unas 2 semanas",
+        "Entrega en 1 semana",
       ],
     },
     {
@@ -237,7 +237,7 @@ export const faq: FaqContent = {
   items: [
     {
       q: "¿Cuánto tarda en estar lista mi web?",
-      a: "Una web sencilla suele estar lista en 2 o 3 semanas, y un proyecto más completo o una tienda online entre 4 y 6 semanas. Te damos una fecha cerrada antes de empezar.",
+      a: "Una web suele estar lista en 1 semana, y un proyecto más complejo o una tienda online en 2 o 3 semanas. Te damos una fecha cerrada antes de empezar.",
     },
     {
       q: "¿Cuánto cuesta una web?",
