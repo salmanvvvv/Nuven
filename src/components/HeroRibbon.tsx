@@ -17,8 +17,9 @@ export function HeroRibbon() {
 
   const px = useMotionValue(0);
   const py = useMotionValue(0);
-  const rotateY = useSpring(useTransform(px, [-1, 1], [-9, 9]), { stiffness: 120, damping: 20, mass: 0.6 });
-  const rotateX = useSpring(useTransform(py, [-1, 1], [7, -7]), { stiffness: 120, damping: 20, mass: 0.6 });
+  // 2D drift only: a 3D rotation makes the browser rasterise the SVG and it turns blurry.
+  const x = useSpring(useTransform(px, [-1, 1], [-10, 10]), { stiffness: 120, damping: 20, mass: 0.6 });
+  const y = useSpring(useTransform(py, [-1, 1], [-8, 8]), { stiffness: 120, damping: 20, mass: 0.6 });
 
   useEffect(() => {
     if (reduce || !window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
@@ -33,12 +34,12 @@ export function HeroRibbon() {
   const id = (s: string) => `${raw}${s}`;
 
   return (
-    <div className="relative mx-auto aspect-[5/4] w-full max-w-[560px] [perspective:1200px]" aria-hidden>
+    <div className="relative mx-auto aspect-[5/4] w-full max-w-[560px]" aria-hidden>
       {/* soft light behind the mark */}
       <div className="absolute inset-[8%] rounded-full bg-[radial-gradient(closest-side,rgb(255_255_255/0.13),rgb(255_255_255/0.03)_55%,transparent)] blur-2xl" />
 
-      <m.div className="relative size-full" style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}>
-        <svg viewBox="-6 -6 112 92" className="size-full overflow-visible">
+      <m.div className="relative size-full" style={{ x, y }}>
+        <svg viewBox="-6 -6 112 92" className="size-full overflow-visible" shapeRendering="geometricPrecision">
           <defs>
             <linearGradient id={id("l")} x1="0" y1="1" x2="1" y2="0">
               <stop offset="0" stopColor="#f2f2f2" />
@@ -60,9 +61,6 @@ export function HeroRibbon() {
               <stop offset="0.5" stopColor="#fff" stopOpacity="0.9" />
               <stop offset="1" stopColor="#fff" stopOpacity="0" />
             </linearGradient>
-            <filter id={id("shadow")} x="-20%" y="-20%" width="140%" height="160%">
-              <feDropShadow dx="0" dy="3" stdDeviation="3" floodColor="#000" floodOpacity="0.55" />
-            </filter>
             <clipPath id={id("clip")}>
               <path d={RIBBON} />
             </clipPath>
@@ -98,7 +96,8 @@ export function HeroRibbon() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: EASE, delay: 0.2 }}
           />
-          <g mask={`url(#${id("mask")})`} filter={`url(#${id("shadow")})`}>
+          <g mask={`url(#${id("mask")})`}>
+            <path d={RIBBON} fill="#000" opacity="0.35" transform="translate(0 1.4)" />
             <path d={RIBBON} fill={`url(#${id("d")})`} />
             <g clipPath={`url(#${id("clip")})`}>
               <rect

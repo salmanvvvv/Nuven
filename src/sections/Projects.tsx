@@ -4,7 +4,6 @@ import { Container } from "@/components/Container";
 import { Reveal } from "@/components/Reveal";
 import { SectionHeader } from "@/components/SectionHeader";
 import type { ProjectsContent } from "@/content/types";
-import { cn } from "@/lib/cn";
 
 const domainOf = (href: string) => new URL(href).hostname.replace(/^www\./, "");
 
@@ -42,53 +41,41 @@ export function Projects({ content }: { content: ProjectsContent }) {
     <section id="proyectos" aria-labelledby="proyectos-title" className="border-t border-line py-24 sm:py-32">
       <Container>
         <SectionHeader id="proyectos-title" title={content.title} intro={content.intro} />
-        <ul className="grid gap-x-6 gap-y-12 md:grid-cols-2">
+        {/* One row: a swipeable strip on phones, three columns from 640px. */}
+        <ul className="-mx-5 flex snap-x snap-mandatory scroll-px-5 gap-4 overflow-x-auto px-5 pb-2 [scrollbar-width:none] sm:mx-0 sm:grid sm:grid-cols-3 sm:gap-6 sm:scroll-px-0 sm:overflow-visible sm:px-0 sm:pb-0">
           {content.items.map((project, i) => {
             const domain = domainOf(project.href);
             return (
-              <Reveal
-                as="li"
-                key={project.href}
-                delay={i * 0.08}
-                className={cn("group", i === 0 && "md:col-span-2")}
-              >
+              <Reveal as="li" key={project.href} delay={i * 0.08} className="group w-[78%] shrink-0 snap-start sm:w-auto">
                 <a
                   href={project.href}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`${content.visitLabel}: ${project.title} (${content.newTabLabel})`}
-                  className="block rounded-2xl"
+                  className="block rounded-xl"
                 >
-                  <div
-                    className={cn(
-                      "relative overflow-hidden rounded-2xl border border-line bg-surface transition-[border-color,transform] duration-500 ease-[var(--ease-out-soft)] group-hover:-translate-y-1 group-hover:border-line-strong",
-                      i === 0 ? "aspect-[16/10] md:aspect-[2/1]" : "aspect-[16/10]",
-                    )}
-                  >
+                  <div className="relative aspect-[16/10] overflow-hidden rounded-xl border border-line bg-surface transition-[border-color,transform] duration-500 ease-[var(--ease-out-soft)] group-hover:-translate-y-1 group-hover:border-line-strong">
                     {project.image ? (
                       <Image
                         src={project.image}
                         alt={project.alt ?? ""}
                         fill
-                        sizes={i === 0 ? "(min-width: 1240px) 1200px, 100vw" : "(min-width: 1240px) 600px, (min-width: 768px) 50vw, 100vw"}
+                        sizes="(min-width: 1240px) 390px, (min-width: 640px) 33vw, 80vw"
                         className="object-cover object-top transition-[transform,filter] duration-700 ease-[var(--ease-out-soft)] group-hover:scale-[1.03] group-hover:brightness-110"
                       />
                     ) : (
                       <SitePreview title={project.title} domain={domain} />
                     )}
                   </div>
-                  <div className="mt-5 flex items-start justify-between gap-6">
+                  <div className="mt-4 flex items-start justify-between gap-3">
                     <div className="min-w-0">
-                      <h3 className={cn("font-medium tracking-[-0.02em]", i === 0 ? "text-2xl" : "text-xl")}>{project.title}</h3>
-                      <p className="mt-1.5 text-[0.875rem] text-muted">{project.category ?? domain}</p>
+                      <h3 className="text-[1.0625rem] font-medium tracking-[-0.015em]">{project.title}</h3>
+                      <p className="mt-1 text-[0.8125rem] text-muted">{project.category ?? domain}</p>
                     </div>
-                    <span className="mt-1 inline-flex shrink-0 items-center gap-1.5 text-[0.8125rem] text-muted transition-colors duration-300 group-hover:text-fg">
-                      {content.visitLabel}
-                      <ArrowUpRight
-                        aria-hidden
-                        className="size-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                      />
-                    </span>
+                    <ArrowUpRight
+                      aria-hidden
+                      className="mt-0.5 size-4 shrink-0 text-muted transition-[color,transform] duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-fg"
+                    />
                   </div>
                 </a>
               </Reveal>
