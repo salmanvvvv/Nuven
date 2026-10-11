@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+/*
+ * Nuven Digital — design tokens
+ * Strictly monochrome, taken from the logo: pure black ground, white ribbon,
+ * and the grey gradients of the fold. No accent colour by design.
+ */
+@theme {
+  --color-ink: #000000;
+  --color-surface: #0a0a0a;
+  --color-raised: #111111;
+  --color-elevated: #171717;
+  --color-fg: #fafafa;
+  --color-muted: #a3a3a3;
+  --color-subtle: #858585;
+  --color-line: rgb(255 255 255 / 0.1);
+  --color-line-strong: rgb(255 255 255 / 0.18);
+  --color-danger: #f2a7a7;
+
+  --font-display: var(--font-sora), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+
+  --tracking-label: 0.28em;
+  --tracking-wordmark: 0.42em;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-soft: cubic-bezier(0.23, 1, 0.32, 1);
+
+  --animate-sheen: sheen 7s var(--ease-out-soft) infinite;
+}
+
+@keyframes sheen {
+  0% {
+    transform: translateX(-140%) skewX(-18deg);
+  }
+  55%,
+  100% {
+    transform: translateX(360%) skewX(-18deg);
+  }
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    background: var(--color-ink);
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background: var(--color-ink);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: var(--color-fg);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-fg);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  input,
+  select,
+  textarea {
+    caret-color: var(--color-fg);
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #2a2a2a transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2a2a2a;
+    border-radius: 999px;
+    border: 3px solid var(--color-ink);
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+@layer components {
+  /* Small uppercase labels with the wide tracking of the "DIGITAL" wordmark. */
+  .label {
+    font-family: var(--font-display);
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    color: var(--color-subtle);
+  }
+
+  /* Grey gradient that echoes the fold of the "N" ribbon. */
+  .fold-surface {
+    background:
+      linear-gradient(
+        135deg,
+        rgb(255 255 255 / 0.07) 0%,
+        rgb(255 255 255 / 0.02) 38%,
+        rgb(255 255 255 / 0) 60%
+      ),
+      var(--color-surface);
+  }
+
+  .hairline {
+    border-color: var(--color-line);
+  }
+
+  .link-underline {
+    text-decoration-line: underline;
+    text-decoration-color: rgb(255 255 255 / 0.3);
+    text-underline-offset: 0.25em;
+    text-decoration-thickness: 1px;
+    transition: text-decoration-color 200ms var(--ease-out-soft);
+  }
+  .link-underline:hover {
+    text-decoration-color: var(--color-fg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Hero copy rises in with CSS, so it never waits for JavaScript. */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+    filter: blur(4px);
+  }
+}
+.hero-rise {
+  animation: rise 900ms var(--ease-out-expo) both;
+}
