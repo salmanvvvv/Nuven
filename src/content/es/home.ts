@@ -16,6 +16,8 @@ export const hero: HeroContent = {
     "Diseñamos y desarrollamos la web de tu negocio a medida: rápida, clara y pensada para que quien llegue acabe escribiéndote.",
   primaryCta: "Solicitar presupuesto",
   secondaryCta: "Ver proyectos",
+  watchVideo: "Ver vídeo",
+  closeVideo: "Cerrar vídeo",
   facts: ["Diseño 100 % a medida", "Entrega en 1 a 3 semanas", "Trato directo, sin intermediarios"],
 };
 

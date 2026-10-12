@@ -50,6 +50,9 @@ export type HeroContent = {
   subtitle: string;
   primaryCta: string;
   secondaryCta: string;
+  /** Button that shows the background video on its own, uncovered. */
+  watchVideo: string;
+  closeVideo: string;
   facts: string[];
 };
 
