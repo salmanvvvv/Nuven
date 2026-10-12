@@ -6,7 +6,8 @@ import { INTRO_KEY } from "@/lib/intro";
 const LEAVE_MS = 800;
 
 /**
- * Full-screen entrance animation (the Nuven motion reel). Visible only while
+ * Full-screen entrance animation: the first 4 seconds of the Nuven motion reel
+ * (the rest continues behind the hero, see HeroVideo). Visible only while
  * <html> has the `intro-active` class, set by the INTRO_BOOT script. It ends
  * when the video finishes, on "Saltar intro", Escape, or when the visitor
  * starts scrolling, and it never blocks the site if the video fails.
@@ -34,6 +35,7 @@ export function Intro({ label, skipLabel }: { label: string; skipLabel: string }
         /* storage blocked: the intro may play again next visit */
       }
       root.classList.add("intro-leaving");
+      window.dispatchEvent(new Event("nuven:intro-leaving"));
       window.setTimeout(() => {
         root.classList.remove("intro-active", "intro-leaving");
         video.pause();
@@ -70,7 +72,7 @@ export function Intro({ label, skipLabel }: { label: string; skipLabel: string }
     window.addEventListener("keydown", onKey);
     window.addEventListener("wheel", onWheel, { passive: true });
     window.addEventListener("touchmove", finish, { passive: true });
-    const failsafe = window.setTimeout(finish, 30000);
+    const failsafe = window.setTimeout(finish, 10000);
     skipRef.current?.focus({ preventScroll: true });
 
     return () => {
@@ -95,7 +97,7 @@ export function Intro({ label, skipLabel }: { label: string; skipLabel: string }
         className="size-full object-cover portrait:object-contain"
       >
         <source src="/intro/intro-720.mp4" type='video/mp4; codecs="avc1.64001F"' media="(max-width: 767px)" />
-        <source src="/intro/intro-1080.mp4" type='video/mp4; codecs="avc1.640029"' />
+        <source src="/intro/intro-1080.mp4" type='video/mp4; codecs="avc1.640028"' />
         {/* for browsers without H.264 */}
         <source src="/intro/intro-720.webm" type='video/webm; codecs="vp9"' />
       </video>

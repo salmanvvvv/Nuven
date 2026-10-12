@@ -89,15 +89,14 @@ El formulario incluye un campo trampa (honeypot), descarta los envíos hechos en
 5. En [Resend](https://resend.com/domains) verifica tu dominio para poder enviar desde tu propia dirección.
 6. Da de alta la web en Google Search Console y envía `https://tu-dominio/sitemap.xml`.
 
-## Animación de entrada
+## Animación de entrada y vídeo de fondo
 
-Al abrir la web se reproduce el vídeo de `public/intro/` a pantalla completa (una vez por sesión del navegador). Se puede saltar con «Saltar intro», con Escape o al empezar a hacer scroll, y no se muestra a quien tiene activada la reducción de movimiento. Para cambiarlo, sustituye los vídeos manteniendo los nombres:
+El vídeo de marca se divide en dos partes, en `public/intro/`:
 
-- `intro-1080.mp4`: escritorio (H.264, 1920 × 1080)
-- `intro-720.mp4`: móvil (H.264, 1280 × 720)
-- `intro-720.webm`: alternativa VP9 para navegadores sin H.264
+- **Entrada (segundos 0 a 4):** a pantalla completa al abrir la web, una vez por sesión del navegador. Se puede saltar con «Saltar intro», con Escape o al hacer scroll. Archivos: `intro-1080.mp4` (escritorio), `intro-720.mp4` (móvil) e `intro-720.webm` (alternativa VP9).
+- **Fondo del inicio (segundo 4 al final):** continúa detrás del titular, oscurecido para que el texto se lea, en bucle y en pausa cuando no está en pantalla. Archivos: `hero-540.mp4` y `hero-540.webm`.
 
-Para desactivarla, quita `<Intro … />` de `src/app/layout.tsx`.
+Ninguno de los dos se reproduce (ni se descarga) para quien tiene activada la reducción de movimiento. Para sustituirlos, mantén los nombres de archivo. Para quitar la entrada, elimina `<Intro … />` de `src/app/layout.tsx`; para quitar el fondo, elimina `<HeroVideo />` de `src/sections/Hero.tsx`.
 
 ## Cookies y analítica
 

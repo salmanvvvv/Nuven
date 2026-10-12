@@ -1,11 +1,22 @@
 import { ButtonLink } from "@/components/Button";
 import { Container } from "@/components/Container";
 import { HeroRibbon } from "@/components/HeroRibbon";
+import { HeroVideo } from "@/components/HeroVideo";
 import type { HeroContent } from "@/content/types";
 
 export function Hero({ content }: { content: HeroContent }) {
   return (
     <section aria-labelledby="hero-title" className="relative overflow-hidden pt-28 pb-20 sm:pt-36 lg:flex lg:min-h-[100svh] lg:items-center lg:pt-24 lg:pb-16">
+      <HeroVideo />
+      {/* darken the video: strongest behind the copy, and fade into the page at the bottom */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-ink/80 lg:bg-transparent lg:bg-[linear-gradient(90deg,rgb(0_0_0/0.9)_0%,rgb(0_0_0/0.82)_45%,rgb(0_0_0/0.58)_100%)]"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgb(0_0_0/0.7)_0%,transparent_22%,transparent_70%,#000_100%)]"
+      />
       {/* faint fold-shaped light across the page */}
       <div
         aria-hidden
