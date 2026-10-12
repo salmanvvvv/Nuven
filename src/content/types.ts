@@ -51,6 +51,18 @@ export type HeroContent = {
   facts: string[];
 };
 
+export type ShowreelContent = {
+  /** Set to false to hide the section. */
+  enabled: boolean;
+  eyebrow: string;
+  title: string;
+  intro: string;
+  /** Screen-reader description of the video. */
+  videoLabel: string;
+  pauseLabel: string;
+  playLabel: string;
+};
+
 export type ValueContent = {
   title: string;
   intro: string;
@@ -189,6 +201,7 @@ export type LegalPage = {
 export type Dictionary = {
   site: SiteContent;
   hero: HeroContent;
+  showreel: ShowreelContent;
   value: ValueContent;
   services: ServicesContent;
   process: ProcessContent;

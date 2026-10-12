@@ -6,6 +6,7 @@ import type {
   ProcessContent,
   ProjectsContent,
   ServicesContent,
+  ShowreelContent,
   TestimonialsContent,
   ValueContent,
 } from "../types";
@@ -17,6 +18,18 @@ export const hero: HeroContent = {
   primaryCta: "Solicitar presupuesto",
   secondaryCta: "Ver proyectos",
   facts: ["Diseño 100 % a medida", "Entrega en 1 a 3 semanas", "Trato directo, sin intermediarios"],
+};
+
+// Vídeo de motion graphics (se genera en /motion con `npm run render`).
+export const showreel: ShowreelContent = {
+  enabled: true,
+  eyebrow: "Showreel",
+  title: "Diseño, movimiento y resultados.",
+  intro: "Un vistazo a cómo pensamos una web: estructura clara, interfaces cuidadas y cada detalle orientado a que te escriban.",
+  videoLabel:
+    "Vídeo de presentación de Nuven Digital: el logo se forma con una cinta de luz, baldosas en 3D, maquetas de webs, métricas de ejemplo y el lema «Hagamos realidad tu idea».",
+  pauseLabel: "Pausar vídeo",
+  playLabel: "Reproducir vídeo",
 };
 
 export const value: ValueContent = {

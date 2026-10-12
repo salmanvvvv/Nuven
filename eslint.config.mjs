@@ -14,6 +14,8 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
     // Vendored Claude Code skills (third-party, not part of the site).
     ".claude/**",
+    // Motion-graphics project (separate Vite + HyperFrames app with its own config).
+    "motion/**",
   ]),
 ]);
 

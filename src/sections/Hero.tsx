@@ -1,6 +1,6 @@
 import { ButtonLink } from "@/components/Button";
 import { Container } from "@/components/Container";
-import { HeroRibbon } from "@/components/HeroRibbon";
+import { MotionHero } from "@/components/MotionHero";
 import type { HeroContent } from "@/content/types";
 
 export function Hero({ content }: { content: HeroContent }) {
@@ -42,8 +42,13 @@ export function Hero({ content }: { content: HeroContent }) {
             ))}
           </ul>
         </div>
-        <div className="mx-auto w-full max-w-[420px] lg:max-w-none">
-          <HeroRibbon />
+        <div className="w-full">
+          {/* Decorative motion loop; the poster is the first paint (and all that reduced-motion users get). */}
+          <MotionHero
+            priority
+            sizes="(min-width: 1024px) 540px, 100vw"
+            className="rounded-2xl border border-white/10 shadow-[0_40px_120px_-40px_rgb(255_255_255/0.12)]"
+          />
         </div>
       </Container>
     </section>

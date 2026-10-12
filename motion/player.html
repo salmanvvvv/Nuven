@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nuven Motion — Preview</title>
+    <style>
+      @font-face { font-family: "Sora"; font-weight: 100 800; font-display: block; src: url("/assets/fonts/sora-latin-wght-normal.woff2") format("woff2-variations"); }
+      * { box-sizing: border-box; }
+      body { margin: 0; min-height: 100vh; background: #050505; color: #ddd; font: 13px/1.4 "Sora", system-ui, sans-serif; display: grid; place-items: center; }
+      .wrap { width: min(96vw, 1280px); display: grid; gap: 14px; }
+      .wrap.portrait { width: min(96vw, 46vh); }
+      canvas { width: 100%; height: auto; display: block; background: #000; border: 1px solid rgb(255 255 255 / 0.1); border-radius: 10px; }
+      .bar { display: flex; align-items: center; gap: 12px; }
+      button, select { background: #151515; color: #eee; border: 1px solid rgb(255 255 255 / 0.15); border-radius: 999px; padding: 7px 14px; font: inherit; cursor: pointer; }
+      input[type="range"] { flex: 1; accent-color: #fff; }
+      .tc { font-variant-numeric: tabular-nums; min-width: 120px; text-align: right; letter-spacing: 0.06em; }
+      .labels { display: flex; gap: 6px; flex-wrap: wrap; }
+      .labels button { padding: 4px 10px; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap" id="wrap">
+      <canvas id="stage"></canvas>
+      <div class="bar">
+        <button id="play">Play</button>
+        <input id="scrub" type="range" min="0" step="0.001" value="0" />
+        <span class="tc" id="tc">0.00 s</span>
+        <select id="format">
+          <option value="h">16:9</option>
+          <option value="v">9:16</option>
+        </select>
+      </div>
+      <div class="labels" id="labels"></div>
+    </div>
+    <script type="module" src="/src/player.ts"></script>
+  </body>
+</html>

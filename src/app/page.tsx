@@ -7,6 +7,7 @@ import { Plans } from "@/sections/Plans";
 import { Process } from "@/sections/Process";
 import { Projects } from "@/sections/Projects";
 import { Services } from "@/sections/Services";
+import { Showreel } from "@/sections/Showreel";
 import { Testimonials } from "@/sections/Testimonials";
 import { Value } from "@/sections/Value";
 
@@ -21,6 +22,7 @@ export default function HomePage() {
       <Hero content={t.hero} />
       <Value content={t.value} />
       <Projects content={t.projects} />
+      <Showreel content={t.showreel} />
       <Services content={t.services} />
       <Process content={t.process} />
       <Plans content={t.plans} />

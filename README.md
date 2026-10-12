@@ -45,6 +45,10 @@ public/
   projects/             Imágenes del portfolio
 ```
 
+## Vídeo de motion graphics
+
+El vídeo del hero y de la sección Showreel se genera como animación programada en [`motion/`](motion/README.md) (HyperFrames + GSAP + Three.js) y se exporta a `public/video/` (`nuven-motion.mp4`, `.webm`, versión vertical y poster). Para cambiar textos, duración o colores y volver a renderizar: `cd motion && npm install && npm run render`. Los componentes son `src/components/MotionHero.tsx` y `src/sections/Showreel.tsx`; la sección se oculta con `showreel.enabled = false` en `src/content/es/home.ts`.
+
 ## Editar contenidos
 
 No hace falta tocar componentes: todo el texto está en `src/content/es/`.
