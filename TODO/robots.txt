@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+Host: https://nuvendigital.com
+Sitemap: https://nuvendigital.com/sitemap.xml

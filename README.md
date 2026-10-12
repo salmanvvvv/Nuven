@@ -80,6 +80,20 @@ Copia `.env.example` a `.env.local` (en local) o configúralas en Vercel:
 
 El formulario incluye un campo trampa (honeypot), descarta los envíos hechos en menos de 2,5 segundos y limita a 5 envíos cada 10 minutos por IP. El límite vive en memoria; si algún día recibes mucho spam, cámbialo por un almacén compartido (por ejemplo Upstash Redis).
 
+## Versión estática (carpeta `TODO/`)
+
+La carpeta `TODO/` contiene toda la web exportada como archivos estáticos (HTML, CSS, JS, vídeos, imágenes, fuentes e iconos), lista para subir a otro repositorio u hosting sin Next.js: GitHub Pages, Netlify o un hosting tradicional. Su propio `README.md` explica la estructura y cómo publicarla.
+
+Para regenerarla después de cambiar la web (necesita Python 3 con `beautifulsoup4`):
+
+```bash
+NEXT_PUBLIC_SITE_URL=https://tu-dominio.com npm run build
+npm run start            # en otra terminal
+npm run export:static
+```
+
+En la versión estática el formulario abre el correo del visitante con el mensaje ya escrito, o envía a un servicio como Formspree si configuras `FORM_ENDPOINT` en `TODO/js/main.js`.
+
 ## Despliegue en Vercel
 
 1. En [vercel.com/new](https://vercel.com/new) importa este repositorio de GitHub. Vercel detecta Next.js automáticamente.
