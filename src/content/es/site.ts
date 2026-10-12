@@ -13,6 +13,8 @@ export const site: SiteContent = {
   whatsappMessage: "Hola, me gustaría pedir presupuesto para una web.",
   whatsappLabel: "Escríbenos por WhatsApp",
   callLabel: "Llamar",
+  introLabel: "Presentación de Nuven Digital",
+  introSkip: "Saltar intro",
   city: "Madrid", // [PLACEHOLDER] Ciudad
   country: "ES",
   nav: [

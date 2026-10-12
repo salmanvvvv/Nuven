@@ -1,8 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Sora } from "next/font/google";
 import { CookieBanner } from "@/components/CookieBanner";
+import { Intro } from "@/components/Intro";
 import { MotionProvider } from "@/components/MotionProvider";
 import { getDictionary } from "@/content";
+import { INTRO_BOOT } from "@/lib/intro";
 import { siteUrl } from "@/lib/site-url";
 import { Footer } from "@/sections/Footer";
 import { Header } from "@/sections/Header";
@@ -46,7 +48,17 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="es" id="top" data-scroll-behavior="smooth" className={`${sora.variable} ${geist.variable} antialiased`}>
+    // suppressHydrationWarning: INTRO_BOOT adds a class to <html> before React hydrates.
+    <html
+      lang="es"
+      id="top"
+      data-scroll-behavior="smooth"
+      className={`${sora.variable} ${geist.variable} antialiased`}
+      suppressHydrationWarning
+    >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: INTRO_BOOT }} />
+      </head>
       <body className="min-h-dvh">
         <a
           href="#contenido"
@@ -55,6 +67,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           {site.skipToContent}
         </a>
         <MotionProvider>
+          <Intro label={site.introLabel} skipLabel={site.introSkip} />
           <Header site={site} />
           <main id="contenido" tabIndex={-1} className="outline-none">
             {children}

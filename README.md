@@ -89,6 +89,16 @@ El formulario incluye un campo trampa (honeypot), descarta los envíos hechos en
 5. En [Resend](https://resend.com/domains) verifica tu dominio para poder enviar desde tu propia dirección.
 6. Da de alta la web en Google Search Console y envía `https://tu-dominio/sitemap.xml`.
 
+## Animación de entrada
+
+Al abrir la web se reproduce el vídeo de `public/intro/` a pantalla completa (una vez por sesión del navegador). Se puede saltar con «Saltar intro», con Escape o al empezar a hacer scroll, y no se muestra a quien tiene activada la reducción de movimiento. Para cambiarlo, sustituye los vídeos manteniendo los nombres:
+
+- `intro-1080.mp4`: escritorio (H.264, 1920 × 1080)
+- `intro-720.mp4`: móvil (H.264, 1280 × 720)
+- `intro-720.webm`: alternativa VP9 para navegadores sin H.264
+
+Para desactivarla, quita `<Intro … />` de `src/app/layout.tsx`.
+
 ## Cookies y analítica
 
 El banner guarda la elección del usuario en `localStorage` (`nuven-consent`) y se puede reabrir desde «Configurar cookies» en el pie. Ahora mismo la web no carga ninguna cookie de análisis. Si añades analítica, cárgala solo cuando `readConsent()?.analytics` sea `true` (en `src/components/CookieBanner.tsx`) y actualiza la política de cookies.

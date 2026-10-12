@@ -31,6 +31,8 @@ export type SiteContent = {
   whatsappMessage: string;
   whatsappLabel: string;
   callLabel: string;
+  introLabel: string;
+  introSkip: string;
   city: string;
   country: string;
   nav: Link[];

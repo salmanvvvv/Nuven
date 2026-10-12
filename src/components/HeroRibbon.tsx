@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useId } from "react";
+import { useEffect, useId, useState } from "react";
 import { m, useMotionValue, useReducedMotion, useSpring, useTransform } from "framer-motion";
 import { LEFT_BAR, RIBBON, RIGHT_BAR } from "./brand-paths";
 
@@ -31,6 +31,14 @@ export function HeroRibbon() {
     return () => window.removeEventListener("pointermove", onMove);
   }, [reduce, px, py]);
 
+  // Replay the unfolding once the entrance video has finished.
+  const [run, setRun] = useState(0);
+  useEffect(() => {
+    const replay = () => setRun((r) => r + 1);
+    window.addEventListener("nuven:intro-done", replay);
+    return () => window.removeEventListener("nuven:intro-done", replay);
+  }, []);
+
   const id = (s: string) => `${raw}${s}`;
 
   return (
@@ -38,7 +46,7 @@ export function HeroRibbon() {
       {/* soft light behind the mark */}
       <div className="absolute inset-[8%] rounded-full bg-[radial-gradient(closest-side,rgb(255_255_255/0.13),rgb(255_255_255/0.03)_55%,transparent)] blur-2xl" />
 
-      <m.div className="relative size-full" style={{ x, y }}>
+      <m.div key={run} className="relative size-full" style={{ x, y }}>
         <svg viewBox="-6 -6 112 92" className="size-full overflow-visible" shapeRendering="geometricPrecision">
           <defs>
             <linearGradient id={id("l")} x1="0" y1="1" x2="1" y2="0">

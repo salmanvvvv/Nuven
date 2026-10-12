@@ -168,3 +168,32 @@
 .hero-rise {
   animation: rise 900ms var(--ease-out-expo) both;
 }
+
+/* Entrance animation. Shown only while <html> has .intro-active (see lib/intro.ts). */
+#intro {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  background: var(--color-ink);
+  transition: opacity 800ms var(--ease-out-soft);
+}
+#intro video {
+  transition: transform 800ms var(--ease-out-soft);
+}
+.intro-active #intro {
+  display: block;
+}
+.intro-active body {
+  overflow: hidden;
+}
+.intro-active .hero-rise {
+  animation-play-state: paused;
+}
+.intro-leaving #intro {
+  opacity: 0;
+  pointer-events: none;
+}
+.intro-leaving #intro video {
+  transform: scale(1.04);
+}
