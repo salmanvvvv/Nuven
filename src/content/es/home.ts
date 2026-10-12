@@ -280,7 +280,7 @@ export const contact: ContactContent = {
     "Hacemos una llamada de 30 minutos para conocer tu negocio.",
     "Recibes una propuesta con precio y plazos cerrados.",
   ],
-  directLabel: "¿Prefieres el email?",
+  directLabel: "¿Prefieres hablar directamente?",
   form: {
     name: "Nombre",
     namePlaceholder: "Tu nombre",
@@ -309,7 +309,7 @@ export const contact: ContactContent = {
     successText: "Gracias por escribirnos. Te responderemos en menos de 24 horas laborables.",
     sendAnother: "Enviar otro mensaje",
     errorGeneric:
-      "No hemos podido enviar tu mensaje. Inténtalo de nuevo en unos minutos o escríbenos directamente por email.",
+      "No hemos podido enviar tu mensaje. Inténtalo de nuevo en unos minutos o escríbenos por WhatsApp o email.",
     errorRateLimit: "Has enviado varios mensajes seguidos. Espera unos minutos y vuelve a intentarlo.",
     honeypotLabel: "Deja este campo vacío",
     errors: {

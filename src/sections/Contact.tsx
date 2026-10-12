@@ -1,10 +1,13 @@
-import { Mail } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
+import { ButtonLink } from "@/components/Button";
 import { ContactForm } from "@/components/ContactForm";
 import { Container } from "@/components/Container";
 import { Reveal } from "@/components/Reveal";
-import type { ContactContent } from "@/content/types";
+import { WhatsAppIcon } from "@/components/WhatsAppIcon";
+import type { ContactContent, SiteContent } from "@/content/types";
+import { telHref, whatsappHref } from "@/lib/contact-links";
 
-export function Contact({ content, email }: { content: ContactContent; email: string }) {
+export function Contact({ content, site }: { content: ContactContent; site: SiteContent }) {
   return (
     <section id="contacto" aria-labelledby="contacto-title" className="relative overflow-hidden border-t border-line py-24 sm:py-32">
       <div
@@ -33,10 +36,32 @@ export function Contact({ content, email }: { content: ContactContent; email: st
             ))}
           </ol>
 
-          <p className="mt-14 text-[0.875rem] text-subtle">{content.directLabel}</p>
-          <a href={`mailto:${email}`} className="link-underline mt-2 inline-flex items-center gap-2.5 font-display text-lg">
-            <Mail aria-hidden strokeWidth={1.5} className="size-5 text-muted" />
-            {email}
+          <h3 className="label mt-14">{content.directLabel}</h3>
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            {site.whatsapp && (
+              <ButtonLink
+                href={whatsappHref(site.whatsapp, site.whatsappMessage)}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${site.whatsappLabel}: ${site.whatsapp}`}
+              >
+                <WhatsAppIcon className="size-[1.125rem]" />
+                {site.whatsappLabel}
+              </ButtonLink>
+            )}
+            {site.phone && (
+              <ButtonLink href={telHref(site.phone)} variant="secondary" aria-label={`${site.callLabel}: ${site.phone}`}>
+                <Phone aria-hidden strokeWidth={1.5} className="size-4" />
+                {site.callLabel} · {site.phone}
+              </ButtonLink>
+            )}
+          </div>
+          <a
+            href={`mailto:${site.email}`}
+            className="link-underline mt-6 inline-flex items-center gap-2.5 font-display text-base break-all sm:text-lg"
+          >
+            <Mail aria-hidden strokeWidth={1.5} className="size-5 shrink-0 text-muted" />
+            {site.email}
           </a>
         </Reveal>
 

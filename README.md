@@ -50,7 +50,7 @@ public/
 No hace falta tocar componentes: todo el texto está en `src/content/es/`.
 
 - **Planes, servicios, FAQ, proyectos y testimonios:** `src/content/es/home.ts`
-- **Email, teléfono, ciudad, redes sociales y navegación:** `src/content/es/site.ts`
+- **Email, WhatsApp, teléfono de llamadas, ciudad, redes sociales y navegación:** `src/content/es/site.ts`
 - **Textos legales:** `src/content/es/legal.ts`
 
 Busca `[PLACEHOLDER]` y `[COMPLETAR]` en el proyecto para encontrar todo lo que debes sustituir.

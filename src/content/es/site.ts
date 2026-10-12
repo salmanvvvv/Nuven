@@ -7,8 +7,12 @@ export const site: SiteContent = {
   tagline: "Diseño y desarrollo web para negocios que quieren crecer",
   description:
     "Agencia de diseño y desarrollo web. Creamos webs a medida, rápidas y pensadas para convertir visitas en clientes para negocios, autónomos y startups.",
-  email: "hola@nuvendigital.com", // [PLACEHOLDER] Email de contacto real
-  phone: "+34 600 000 000", // [PLACEHOLDER] Teléfono (o déjalo vacío para ocultarlo)
+  email: "nuvenndigitaal@gmail.com",
+  phone: "+34 722 40 22 10", // Llamadas
+  whatsapp: "+34 625 08 82 06",
+  whatsappMessage: "Hola, me gustaría pedir presupuesto para una web.",
+  whatsappLabel: "Escríbenos por WhatsApp",
+  callLabel: "Llamar",
   city: "Madrid", // [PLACEHOLDER] Ciudad
   country: "ES",
   nav: [

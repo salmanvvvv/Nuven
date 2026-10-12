@@ -23,7 +23,14 @@ export type SiteContent = {
   tagline: string;
   description: string;
   email: string;
+  /** Phone number for calls. Leave empty to hide it. */
   phone: string;
+  /** WhatsApp number in international format, e.g. "+34 625 08 82 06". Leave empty to hide it. */
+  whatsapp: string;
+  /** Text pre-filled in the WhatsApp chat. */
+  whatsappMessage: string;
+  whatsappLabel: string;
+  callLabel: string;
   city: string;
   country: string;
   nav: Link[];

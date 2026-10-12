@@ -26,7 +26,7 @@ export default function HomePage() {
       <Plans content={t.plans} />
       <Testimonials content={t.testimonials} />
       <Faq content={t.faq} />
-      <Contact content={t.contact} email={t.site.email} />
+      <Contact content={t.contact} site={t.site} />
     </>
   );
 }

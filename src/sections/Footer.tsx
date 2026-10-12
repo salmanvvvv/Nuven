@@ -4,6 +4,7 @@ import { Container } from "@/components/Container";
 import { LogoMark } from "@/components/Logo";
 import { CookieSettingsButton } from "@/components/CookieBanner";
 import { SocialIcon } from "@/components/SocialIcon";
+import { telHref, whatsappHref } from "@/lib/contact-links";
 import type { FooterContent, SiteContent } from "@/content/types";
 
 export function Footer({ site, content }: { site: SiteContent; content: FooterContent }) {
@@ -46,10 +47,22 @@ export function Footer({ site, content }: { site: SiteContent; content: FooterCo
                   {site.email}
                 </a>
               </li>
+              {site.whatsapp && (
+                <li>
+                  <a
+                    href={whatsappHref(site.whatsapp, site.whatsappMessage)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={linkCls}
+                  >
+                    WhatsApp · {site.whatsapp}
+                  </a>
+                </li>
+              )}
               {site.phone && (
                 <li>
-                  <a href={`tel:${site.phone.replace(/\s/g, "")}`} className={linkCls}>
-                    {site.phone}
+                  <a href={telHref(site.phone)} className={linkCls}>
+                    {site.callLabel} · {site.phone}
                   </a>
                 </li>
               )}
