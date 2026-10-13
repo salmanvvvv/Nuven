@@ -1,4 +1,4 @@
-import { T } from "../config";
+import { BEATS, T } from "../config";
 import { hud, rr } from "../draw";
 import { mockup, type MockKind } from "../mockups";
 import type { RC } from "../types";
@@ -19,7 +19,7 @@ export function lensBarrel(l: number) {
 }
 
 /** When the quadrants fly off and the 3D cards take over (scene-local). */
-export const LENS_EXIT = 1.95;
+export const LENS_EXIT = BEATS.lensExit;
 
 /**
  * Scene 4a (8.75–11 s): the frame bends like a curved screen (the actual
@@ -89,7 +89,7 @@ export function drawLens(rc: RC, l: number) {
     g.roundRect(qx, qy, qw, qh, gap > 1 ? rad.map((r) => Math.max(r, 12 * u * (gap / (20 * u)))) : rad);
     g.clip();
 
-    const sw = k(l, 0.5 + q.order * 0.11, 0.9 + q.order * 0.11, "expo.inOut");
+    const sw = k(l, BEATS.swapStart + q.order * BEATS.swapStep, BEATS.swapStart + 0.4 + q.order * BEATS.swapStep, "expo.inOut");
     const split = qy + qh * (1 - sw);
 
     // old content: the scene-3 frame, scaled into the panel

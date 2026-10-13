@@ -29,6 +29,16 @@ const motion = createMotion(canvas, W, H);
 (window as unknown as { seek: (t: number) => void }).seek = motion.seek;
 scrub.max = String(motion.duration);
 
+// the vertical cut has a soundtrack (npm run audio); keep it in sync with the clock
+const tracks = vertical ? ["music", "sfx"].map((n) => new Audio(`/assets/audio/${n}.wav`)) : [];
+const syncAudio = () => {
+  for (const a of tracks) {
+    if (Math.abs(a.currentTime - time) > 0.05) a.currentTime = time;
+    if (playing && a.paused) a.play().catch(() => {});
+    if (!playing && !a.paused) a.pause();
+  }
+};
+
 let time = Number(params.get("t") ?? 0);
 let playing = false;
 let lastNow = 0;
@@ -42,7 +52,10 @@ const show = () => {
 const loop = (now: number) => {
   if (playing) {
     time += (now - lastNow) / 1000;
-    if (time >= motion.duration) time = 0; // loop like the website video
+    if (time >= motion.duration) {
+      time = 0; // loop like the website video
+      for (const a of tracks) a.currentTime = 0;
+    }
     show();
   }
   lastNow = now;
@@ -52,11 +65,13 @@ const loop = (now: number) => {
 const toggle = () => {
   playing = !playing;
   playBtn.textContent = playing ? "Pause" : "Play";
+  syncAudio();
 };
 playBtn.onclick = toggle;
 scrub.oninput = () => {
   time = Number(scrub.value);
   show();
+  syncAudio();
 };
 addEventListener("keydown", (e) => {
   if (e.code === "Space") {
@@ -66,7 +81,10 @@ addEventListener("keydown", (e) => {
   const step = e.shiftKey ? 1 : 1 / motion.fps;
   if (e.code === "ArrowRight") time = Math.min(motion.duration, time + step);
   if (e.code === "ArrowLeft") time = Math.max(0, time - step);
-  if (e.code.startsWith("Arrow")) show();
+  if (e.code.startsWith("Arrow")) {
+    show();
+    syncAudio();
+  }
 });
 
 for (const [name, at] of Object.entries(T)) {

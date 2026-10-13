@@ -1,13 +1,13 @@
-import { C } from "../config";
+import { BEATS, C } from "../config";
 import { COPY } from "../content";
 import { measure, text } from "../draw";
 import type { RC } from "../types";
 import { k } from "../util";
 
 /** Beats (scene-local seconds) on which the solid word changes. */
-export const TYPE_BEATS = [0, 0.55, 1.1, 1.7];
+export const TYPE_BEATS = BEATS.type;
 /** The background flips to black on this beat. */
-export const TYPE_INVERT = 2.2;
+export const TYPE_INVERT = BEATS.typeInvert;
 
 const PHRASE = COPY.kineticWords.join(" · ") + " · ";
 

@@ -1,18 +1,11 @@
-import { C } from "../config";
+import { BEATS, C } from "../config";
 import { COPY } from "../content";
 import { drawLockup, glow, hud, lockupGeom, measure, text } from "../draw";
 import type { RC } from "../types";
 import { clamp, k, lerp } from "../util";
 
 /** Scene-local times of the closing beats. */
-export const OUTRO = {
-  phrase: 0.2, // first word
-  highlight: 0.88, // ribbon marker under the key word
-  wipe: 1.42, // black ribbon wipe to the logo
-  logo: 1.62, // logo starts forming
-  collapse: 3.2, // logo collapses into a point of light
-  black: 3.56, // point gone → black (matches frame 0)
-};
+export const OUTRO = BEATS.outro;
 
 /**
  * Scene 7a (18.4–20 s): "Hagamos realidad tu idea" word by word on paper;
@@ -40,7 +33,7 @@ export function drawPhrase(rc: RC, o: number) {
     const y = cy + size * 0.36 + (li - (lines.length - 1) / 2) * lineH;
     line.forEach((word, j) => {
       const i = wi++;
-      const a = k(o, OUTRO.phrase + i * 0.17, OUTRO.phrase + 0.55 + i * 0.17, "expo.out");
+      const a = k(o, OUTRO.phrase + i * OUTRO.wordStep, OUTRO.phrase + 0.55 + i * OUTRO.wordStep, "expo.out");
       const dy = (1 - a) * 46 * u;
       const style = { ...o2, alpha: a, blur: (1 - a) * 12 * u, color: "#0b0b0b" };
       if (i === highlight) {

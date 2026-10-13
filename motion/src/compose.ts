@@ -1,5 +1,5 @@
 import { RIBBON_NORMAL } from "./brand";
-import { POST, T } from "./config";
+import { POST, T, X } from "./config";
 import { lockupGeom } from "./draw";
 import { drawCards } from "./scenes/cards";
 import { drawIntro } from "./scenes/intro";
@@ -13,16 +13,6 @@ import { beamWipe, irisWipe, ribbonWipe } from "./transitions";
 import type { PostParams, RC } from "./types";
 import { k, lerp } from "./util";
 
-/** Transition windows (global seconds). Each one overlaps the two scenes it joins. */
-export const X = {
-  introOut: [T.tiles - 0.25, T.tiles + 0.3], // logo zooms through, iris opens on the tiles
-  tilesOut: [T.type - 0.32, T.type + 0.25], // white ribbon wipe
-  lensIn: [T.lens, T.lens], // lens is a continuous effect inside scene 4
-  cardsOut: [T.metrics - 0.32, T.metrics + 0.25], // white ribbon wipe, reversed
-  metricsOut: [T.particles - 0.15, T.particles + 0.15], // beam of light sweeps down
-  particlesOut: [T.outro - 0.1, T.outro + 0.25], // core flash opens to white
-  phraseOut: [T.outro + OUTRO.wipe, T.outro + OUTRO.wipe + 0.35], // black ribbon wipe
-} as const;
 
 /**
  * Draws the frame at rc.t: decides which scenes are on screen and how the

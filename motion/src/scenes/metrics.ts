@@ -1,4 +1,4 @@
-import { C } from "../config";
+import { BEATS, C } from "../config";
 import { COPY } from "../content";
 import { glow, hud, rr, text } from "../draw";
 import type { RC } from "../types";
@@ -101,7 +101,7 @@ export function drawMetrics(rc: RC, lt: number) {
   // — counter
   const cA = k(lt, 0.0, 0.45);
   text(g, M.counterLabel, L.counter.x, L.counter.y - L.counterSize * 0.92, { size: 17 * u, weight: 500, track: 0.28, color: C.grey, alpha: cA });
-  const v = Math.round(M.counterValue * k(lt, 0.15, 1.45, "expo.out"));
+  const v = Math.round(M.counterValue * k(lt, BEATS.counter[0], BEATS.counter[1], "expo.out"));
   text(g, `+${v}%`, L.counter.x - 8 * u, L.counter.y, { size: L.counterSize, weight: 600, track: -0.04, alpha: cA, blur: (1 - cA) * 8 });
   text(g, M.counterSub, L.counter.x, L.counter.y + 58 * u, { size: 24 * u, weight: 400, color: "#bdbdbd", alpha: k(lt, 0.4, 0.9) });
 
@@ -215,9 +215,9 @@ export function drawMetrics(rc: RC, lt: number) {
   const iw = ub.w - 56 * u;
   const rowGap = ub.h * 0.18;
   M.toggles.forEach((label, i) => {
-    toggle(g, ix, ub.y + ub.h * 0.2 + i * rowGap, u, k(lt, 1.1 + i * 0.25, 1.35 + i * 0.25, "power3.inOut"), label, iw);
+    toggle(g, ix, ub.y + ub.h * 0.2 + i * rowGap, u, k(lt, BEATS.toggles[i], BEATS.toggles[i] + BEATS.toggleDur, "power3.inOut"), label, iw);
   });
-  const press = k(lt, 2.0, 2.12, "power2.out") - k(lt, 2.12, 2.4, "power2.out");
+  const press = k(lt, BEATS.press, BEATS.press + 0.12, "power2.out") - k(lt, BEATS.press + 0.12, BEATS.press + 0.4, "power2.out");
   const btnH = 50 * u;
   const btnY = ub.y + ub.h - btnH - 22 * u;
   g.save();
@@ -232,7 +232,7 @@ export function drawMetrics(rc: RC, lt: number) {
   text(g, M.button, 0, 7 * u, { size: 18 * u, weight: 600, color: "#000", align: "center" });
   g.restore();
   // ripple after the press
-  const rp = k(lt, 2.08, 2.7, "power2.out");
+  const rp = k(lt, BEATS.press + 0.08, BEATS.press + 0.7, "power2.out");
   if (rp > 0 && rp < 1) {
     g.strokeStyle = `rgba(255,255,255,${0.6 * (1 - rp)})`;
     g.lineWidth = 1.5 * u;

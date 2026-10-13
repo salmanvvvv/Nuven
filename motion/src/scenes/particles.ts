@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import { BEATS } from "../config";
 import { glow, hud } from "../draw";
 import type { RC } from "../types";
 import { k, lerp, rng } from "../util";
@@ -85,8 +86,8 @@ function build(rc: RC) {
   return { scene, camera, mats };
 }
 
-export const PARTICLE_FORM = (p: number) => k(p, 0.4, 1.3, "power2.inOut");
-export const PARTICLE_COLLAPSE = (p: number) => k(p, 1.4, 2.3, "power3.in");
+export const PARTICLE_FORM = (p: number) => k(p, BEATS.particleForm[0], BEATS.particleForm[1], "power2.inOut");
+export const PARTICLE_COLLAPSE = (p: number) => k(p, BEATS.particleCollapse[0], BEATS.particleCollapse[1], "power3.in");
 
 /**
  * Scene 6 (16–18.4 s): particles stream through a flow field, gather into a
