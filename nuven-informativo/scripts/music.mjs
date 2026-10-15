@@ -127,73 +127,90 @@ function sawOsc() {
 
 
 // ───────────────────────── score ─────────────────────────
-// Calm, minimal electronic: 96 BPM, A minor (Am9 – Fmaj7 – Cmaj7 – G6/9), the same
-// harmony as the brand reel so both pieces sound like one identity.
-const BEAT = 60 / 96;
+// Bright, warm electronic pop for an energetic voice: 112 BPM, C major,
+// Fmaj9 – G6 – Em7 – Am7 (IV–V–iii–vi), resolving to Cmaj9 on the end card.
+const BEAT = 60 / 112;
 const BAR = BEAT * 4;
-const GRID0 = 0;
 const CHORDS = [
-  { bass: 33, pad: [57, 60, 64, 71] },
-  { bass: 29, pad: [53, 57, 60, 64] },
-  { bass: 36, pad: [55, 60, 64, 71] },
-  { bass: 31, pad: [55, 59, 62, 69] },
+  { bass: 29, keys: [53, 57, 60, 64, 67] },
+  { bass: 31, keys: [55, 59, 62, 64] },
+  { bass: 28, keys: [52, 55, 59, 62] },
+  { bass: 33, keys: [57, 60, 64, 67] },
 ];
-const chordAt = (t) => CHORDS[Math.floor((t - GRID0) / BAR) % 4];
-const beats = (a, b) => {
+const FINAL = { bass: 36, keys: [60, 64, 67, 71, 74] };
+const END = DURATION;
+const OUTRO = END - 2.9; // end card: everything resolves to Cmaj9
+const chordAt = (t) => (t >= OUTRO ? FINAL : CHORDS[Math.floor(t / BAR) % 4]);
+const beats = (a, b, div = 1) => {
   const out = [];
-  for (let n = Math.ceil(a / BEAT - 1e-6); n * BEAT < b - 1e-6; n++) out.push(n * BEAT);
+  const step = BEAT / div;
+  for (let n = Math.ceil(a / step - 1e-6); n * step < b - 1e-6; n++) out.push([n * step, n]);
   return out;
 };
-const END = DURATION;
-const BREATH = [C.impressionKey - 0.2, S.aporta.start]; // drums drop out under «tu primera impresión»
+const BREATH = [C.impressionKey - 0.2, S.aporta.start]; // the groove holds its breath under «tu primera impresión»
 const inBreath = (t) => t >= BREATH[0] && t < BREATH[1];
-const DRUMS = (t) => t >= S.evolucion.start && t < END - 3.2 && !inBreath(t);
-/** intensity per scene (0..1): the bed grows as the argument builds, opens on the promo */
+const GROOVE = (t) => t >= S.evolucion.start - 0.02 && t < OUTRO && !inBreath(t);
+/** intensity per scene: the bed builds with the argument and opens up on the promo */
 function energy(t) {
-  if (t < S.evolucion.start) return 0.35;
-  if (t < S.importa.start) return 0.55;
-  if (t < S.aporta.start) return inBreath(t) ? 0.45 : 0.65;
-  if (t < S.promo.start) return 0.7;
-  return 0.85;
+  if (t < S.evolucion.start) return 0.45;
+  if (t < S.importa.start) return 0.65;
+  if (t < S.aporta.start) return inBreath(t) ? 0.5 : 0.72;
+  if (t < S.promo.start) return 0.8;
+  return 0.9;
 }
-const padCut = (t) => 500 + 2600 * energy(t) + (inBreath(t) ? 1200 * ramp(t, BREATH[0], BREATH[1]) : 0);
-/** master envelope of the bed: fade in, resolve and fade out on the end card */
-const bedEnv = (t) => ramp(t, 0, 1.6) * (1 - ramp(t, END - 2.6, END - 0.05));
+const bedEnv = (t) => ramp(t, 0, 1.2) * (1 - ramp(t, END - 2.2, END - 0.05));
 
 function kick(t0, amp = 1) {
-  voice(music, t0, 0.45, (tl) => {
-    const f = 48 + 90 * Math.exp(-tl * 34);
-    return Math.tanh(1.3 * Math.sin(2 * Math.PI * f * tl * (1 + 0.5 * Math.exp(-tl * 34)))) * Math.exp(-tl * 8) * amp * bedEnv(t0 + tl);
-  }, { gain: 0.5 });
+  voice(music, t0, 0.42, (tl) => {
+    const f = 50 + 110 * Math.exp(-tl * 40);
+    return Math.tanh(1.5 * Math.sin(2 * Math.PI * f * tl * (1 + 0.6 * Math.exp(-tl * 40)))) * Math.exp(-tl * 9) * amp * bedEnv(t0 + tl);
+  }, { gain: 0.55 });
+  const a = idx(t0);
+  for (let i = a; i < Math.min(N, a + idx(BEAT * 0.9)); i++) duck[i] = Math.min(duck[i], 1 - 0.5 * Math.exp(-((i - a) / SR) * 7));
 }
-function hat(t0, amp = 1, pan = 0.25) {
+function shaker(t0, amp = 1, pan = 0.3) {
   const f = new SVF();
-  voice(music, t0, 0.07, (tl) => f.run(noise(), 9000, 0.8).hp * Math.exp(-tl * 75) * amp * bedEnv(t0 + tl), { gain: 0.08, pan, verb: 0.05 });
+  voice(music, t0, 0.06, (tl) => f.run(noise(), 7000, 1.4).bp * Math.min(1, tl / 0.004) * Math.exp(-tl * 60) * amp * bedEnv(t0 + tl), { gain: 0.1, pan });
+}
+function openHat(t0, amp = 1) {
+  const f = new SVF();
+  voice(music, t0, 0.3, (tl) => f.run(noise(), 9500, 0.8).hp * Math.exp(-tl * 13) * amp * bedEnv(t0 + tl), { gain: 0.07, pan: -0.25, verb: 0.08 });
 }
 function clap(t0, amp = 1) {
   const f = new SVF();
   voice(music, t0, 0.3, (tl) => {
-    const env = tl < 0.025 ? Math.exp(-((tl % 0.008) * 450)) : Math.exp(-(tl - 0.02) * 20);
-    return f.run(noise(), 1400, 1.1).bp * env * amp * bedEnv(t0 + tl);
-  }, { gain: 0.22, verb: 0.3 });
+    const env = tl < 0.025 ? Math.exp(-((tl % 0.008) * 450)) : Math.exp(-(tl - 0.02) * 18);
+    return f.run(noise(), 1500, 1.1).bp * env * amp * bedEnv(t0 + tl);
+  }, { gain: 0.24, verb: 0.3 });
 }
 function bassNote(t0, dur, midi) {
   const f = new SVF();
   const osc = sawOsc();
   voice(music, t0, dur, (tl) => {
     const fr = mtof(midi);
-    const env = Math.min(1, tl / 0.01) * Math.exp(-tl * 1.6);
-    const body = Math.sin(2 * Math.PI * fr * tl) * 0.9 + f.run(osc(fr), 260, 0.8).lp * 0.35;
-    return Math.tanh(1.2 * body) * env * energy(t0) * bedEnv(t0 + tl);
-  }, { gain: 0.32 });
+    const env = Math.min(1, tl / 0.006) * Math.exp(-tl * 5);
+    const body = Math.sin(2 * Math.PI * fr * tl) * 0.85 + f.run(osc(fr), 380 + 900 * Math.exp(-tl * 18), 1.1).lp * 0.45;
+    return Math.tanh(1.3 * body) * env * energy(t0) * bedEnv(t0 + tl);
+  }, { gain: 0.3, ducked: true });
+}
+/** FM electric piano: warm tine, bell attack that softens */
+function epiano(t0, midi, dur, amp = 1, pan = 0) {
+  const fc = mtof(midi);
+  voice(music, t0, dur + 0.4, (tl) => {
+    const env = Math.min(1, tl / 0.004) * Math.exp(-tl * 1.8) * (tl > dur ? Math.exp(-(tl - dur) * 10) : 1);
+    const ix = 1.6 * Math.exp(-tl * 6) + 0.25;
+    const tine = Math.sin(2 * Math.PI * fc * tl + ix * Math.sin(2 * Math.PI * fc * tl));
+    const bark = Math.sin(2 * Math.PI * fc * 2 * tl) * 0.15 * Math.exp(-tl * 9);
+    return (tine + bark) * env * amp * bedEnv(t0 + tl);
+  }, { gain: 0.05, pan, verb: 0.25, delay: 0.12, ducked: true });
 }
 function pluck(t0, midi, pan, amp = 1) {
   const f = new SVF();
   const osc = sawOsc();
-  voice(music, t0, 0.7, (tl) => {
-    const env = Math.min(1, tl / 0.004) * Math.exp(-tl * 6);
-    return f.run(osc(mtof(midi)), 700 + 3000 * Math.exp(-tl * 12), 1).lp * env * amp * bedEnv(t0 + tl);
-  }, { gain: 0.08, pan, verb: 0.3, delay: 0.25 });
+  voice(music, t0, 0.5, (tl) => {
+    const env = Math.min(1, tl / 0.003) * Math.exp(-tl * 8);
+    return f.run(osc(mtof(midi)), 900 + 3800 * Math.exp(-tl * 14), 1).lp * env * amp * bedEnv(t0 + tl);
+  }, { gain: 0.06, pan, verb: 0.25, delay: 0.25, ducked: true });
 }
 function bell(target, t0, midi, { dur = 2, amp = 1, pan = 0, verb = 0.45, bright = 1, gain = 0.12 } = {}) {
   const fc = mtof(midi);
@@ -203,47 +220,62 @@ function bell(target, t0, midi, { dur = 2, amp = 1, pan = 0, verb = 0.45, bright
   }, { gain, pan, verb });
 }
 
-// pad: continuous, chord per bar, filter follows the argument
+// drums first (the kick writes the sidechain everything else pumps with)
+for (const [b, n] of beats(0, END)) {
+  if (!GROOVE(b)) continue;
+  kick(b, b >= S.promo.start ? 1 : 0.85);
+  if (b >= S.fuera.start && n % 2 === 1) clap(b, b >= S.promo.start ? 1 : 0.8);
+  if (b >= S.promo.start) openHat(b + BEAT / 2);
+}
+for (const [t, n] of beats(0, OUTRO, 4)) {
+  if (inBreath(t)) continue;
+  const amp = (n % 4 === 2 ? 1 : 0.55) * (t < S.evolucion.start ? 0.6 : 1);
+  shaker(t, amp, n % 2 ? 0.3 : -0.1);
+}
+// off-beat bass (house style), from the second scene on
+for (const [b] of beats(S.evolucion.start - 0.02, OUTRO)) {
+  if (inBreath(b)) continue;
+  bassNote(b + BEAT / 2, BEAT * 0.45, chordAt(b).bass + 12);
+}
+// electric piano: syncopated chord stabs (1, the «and» of 2, 4); held chords in the breath and the outro
+for (let bar = 0; bar * BAR < END; bar++) {
+  const t = bar * BAR;
+  const ch = chordAt(t);
+  if (t >= OUTRO - 0.01) break;
+  if (inBreath(t + BEAT) || t < S.evolucion.start - 0.02) {
+    ch.keys.forEach((m, k) => epiano(t + k * 0.012, m, BAR * 0.95, 0.75, (k - 2) * 0.18));
+    continue;
+  }
+  for (const [off, len] of [[0, 1.4], [1.5, 1.2], [3, 0.9]]) ch.keys.forEach((m, k) => epiano(t + off * BEAT + k * 0.008, m, len * BEAT, 0.9, (k - 2) * 0.18));
+}
+FINAL.keys.forEach((m, k) => epiano(OUTRO + k * 0.03, m, 2.6, 0.9, (k - 2) * 0.2));
+bassNote(OUTRO, 2.4, FINAL.bass);
+// arpeggio over the argument and the promo (16ths)
+for (const [t, n] of beats(S.importa.start, OUTRO, 4)) {
+  if (inBreath(t) || (t >= S.aporta.start && t < S.promo.start && n % 2)) continue;
+  const keys = chordAt(t).keys;
+  pluck(t, keys[[0, 2, 1, 3, 2, 1, 3, 2][n % 8] % keys.length] + 12, n % 2 ? 0.35 : -0.35, t >= S.promo.start ? 0.9 : 0.6);
+}
+// a soft pad underneath everything
 {
-  const vs = [0, 1, 2, 3].map(() => [sawOsc(), sawOsc()]);
+  const vs = [0, 1, 2, 3, 4].map(() => [sawOsc(), sawOsc()]);
   const fl = [new SVF(), new SVF()];
-  let cut = 600;
+  let cut = 800;
   voice(music, 0, DURATION, (t) => {
     const env = bedEnv(t);
     if (env <= 0.0001) return [0, 0];
-    const notes = t >= END - 3.2 ? [45, 57, 60, 64, 71] : chordAt(t).pad;
-    cut += (padCut(t) - cut) * 0.0004;
+    const notes = chordAt(t).keys;
+    cut += (700 + 2400 * energy(t) - cut) * 0.0004;
     let l = 0;
     let r = 0;
     notes.forEach((m, n) => {
-      const f = mtof(m);
-      l += vs[n % 4][0](f * 0.9968);
-      r += vs[n % 4][1](f * 1.0032);
+      l += vs[n][0](mtof(m) * 0.997);
+      r += vs[n][1](mtof(m) * 1.003);
     });
-    const breath = 0.88 + 0.12 * Math.sin(t * 1.3);
-    return [fl[0].run(l, cut, 0.75).lp * env * breath, fl[1].run(r, cut * 1.03, 0.75).lp * env * breath];
-  }, { gain: 0.06, verb: 0.4 });
+    return [fl[0].run(l, cut, 0.7).lp * env, fl[1].run(r, cut * 1.03, 0.7).lp * env];
+  }, { gain: 0.03, verb: 0.35, ducked: true });
 }
-// drums & bass
-for (const b of beats(0, END)) {
-  const n = Math.round(b / BEAT);
-  if (DRUMS(b)) {
-    if (n % 2 === 0) kick(b, b >= S.promo.start ? 1 : 0.85);
-    hat(b + BEAT / 2, n % 4 === 3 ? 1 : 0.7);
-    if (b >= S.importa.start) hat(b + BEAT / 4, 0.35, -0.3);
-    if (b >= S.promo.start && n % 4 === 2) clap(b);
-  }
-  if (n % 2 === 0 && b >= S.evolucion.start - BAR && b < END - 3.2) bassNote(b, BEAT * 1.9, chordAt(b).bass + 12 * (n % 4 === 2 ? 1 : 0));
-}
-// arpeggio from «por qué importa» on (8ths), brighter in the promo
-for (let t = S.importa.start; t < END - 3.4; t += BEAT / 2) {
-  if (inBreath(t)) continue;
-  const k = Math.round((t - S.importa.start) / (BEAT / 2));
-  const pad = chordAt(t).pad;
-  pluck(t, pad[[0, 2, 1, 3, 2, 1][k % 6]] + 12, k % 2 ? 0.35 : -0.35, t >= S.promo.start ? 1 : 0.7);
-}
-// resolution chord under the end card
-[57, 64, 69, 72, 76].forEach((m, i) => bell(music, END - 3.1 + i * 0.03, m, { dur: 3, amp: 0.5, pan: (i - 2) * 0.2, verb: 0.6 }));
+bell(music, OUTRO + 0.02, 84, { dur: 2.6, amp: 0.4, verb: 0.6, gain: 0.08 });
 
 // ───────────────────────── sound effects (subtle) ─────────────────────────
 function whoosh(t0, dur, { from = -0.6, to = 0.6, lo = 300, hi = 4500, amp = 1, q = 1.2 } = {}) {

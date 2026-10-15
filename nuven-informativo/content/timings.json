@@ -1,55 +1,55 @@
 {
- "duration": 59.416,
- "voice": "ef_dora",
+ "duration": 59.97,
+ "voice": "grabación: voz-elevenlabs.mp3",
  "speed": 1.0,
  "scenes": [
   {
    "id": "gancho",
-   "vo_start": 0.9,
-   "vo_end": 6.233,
+   "vo_start": 0.6,
+   "vo_end": 6.24,
    "tail": 0.6,
    "start": 0.0,
-   "end": 6.483
+   "end": 6.56
   },
   {
    "id": "evolucion",
-   "vo_start": 6.833,
-   "vo_end": 16.263,
+   "vo_start": 6.91,
+   "vo_end": 13.97,
    "tail": 0.5,
-   "start": 6.483,
-   "end": 16.463
+   "start": 6.56,
+   "end": 14.17
   },
   {
    "id": "fuera",
-   "vo_start": 16.813,
-   "vo_end": 23.917,
+   "vo_start": 14.52,
+   "vo_end": 21.37,
    "tail": 0.6,
-   "start": 16.463,
-   "end": 24.167
+   "start": 14.17,
+   "end": 21.57
   },
   {
    "id": "importa",
-   "vo_start": 24.517,
-   "vo_end": 40.047,
+   "vo_start": 21.92,
+   "vo_end": 36.51,
    "tail": 0.6,
-   "start": 24.167,
-   "end": 40.297
+   "start": 21.57,
+   "end": 36.71
   },
   {
    "id": "aporta",
-   "vo_start": 40.647,
-   "vo_end": 48.007,
+   "vo_start": 37.06,
+   "vo_end": 44.19,
    "tail": 0.5,
-   "start": 40.297,
-   "end": 48.207
+   "start": 36.71,
+   "end": 44.39
   },
   {
    "id": "promo",
-   "vo_start": 48.557,
-   "vo_end": 56.216,
-   "tail": 3.2,
-   "start": 48.207,
-   "end": 59.416
+   "vo_start": 44.74,
+   "vo_end": 57.37,
+   "tail": 2.6,
+   "start": 44.39,
+   "end": 59.97
   }
  ],
  "words": [
@@ -57,1039 +57,1039 @@
    "scene": "gancho",
    "text": "¿Sabías",
    "say": "¿Sabías",
-   "start": 0.9,
-   "end": 1.439
+   "start": 0.6,
+   "end": 1.18
   },
   {
    "scene": "gancho",
    "text": "que,",
    "say": "que,",
-   "start": 1.439,
-   "end": 1.69
+   "start": 1.18,
+   "end": 1.45
   },
   {
    "scene": "gancho",
    "text": "en",
    "say": "en",
-   "start": 1.76,
-   "end": 1.895
+   "start": 1.6,
+   "end": 1.783
   },
   {
    "scene": "gancho",
    "text": "Estados",
    "say": "Estados",
-   "start": 1.895,
-   "end": 2.222
+   "start": 1.783,
+   "end": 2.228
   },
   {
    "scene": "gancho",
    "text": "Unidos,",
    "say": "Unidos,",
-   "start": 2.222,
-   "end": 2.51
+   "start": 2.228,
+   "end": 2.62
   },
   {
    "scene": "gancho",
    "text": "casi",
    "say": "casi",
-   "start": 2.83,
-   "end": 3.142
+   "start": 2.76,
+   "end": 3.079
   },
   {
    "scene": "gancho",
    "text": "1 de cada 6",
    "say": "uno de cada seis",
-   "start": 3.142,
-   "end": 3.964
+   "start": 3.079,
+   "end": 3.92
   },
   {
    "scene": "gancho",
    "text": "pequeños",
    "say": "pequeños",
-   "start": 3.964,
-   "end": 4.447
+   "start": 3.92,
+   "end": 4.413
   },
   {
    "scene": "gancho",
    "text": "negocios",
    "say": "negocios",
-   "start": 4.447,
-   "end": 4.985
+   "start": 4.413,
+   "end": 4.964
   },
   {
    "scene": "gancho",
    "text": "sigue",
    "say": "sigue",
-   "start": 4.985,
-   "end": 5.297
+   "start": 4.964,
+   "end": 5.283
   },
   {
    "scene": "gancho",
    "text": "sin",
    "say": "sin",
-   "start": 5.297,
-   "end": 5.553
+   "start": 5.283,
+   "end": 5.544
   },
   {
    "scene": "gancho",
    "text": "página",
    "say": "página",
-   "start": 5.553,
-   "end": 5.978
+   "start": 5.544,
+   "end": 5.979
   },
   {
    "scene": "gancho",
    "text": "web?",
    "say": "web?",
-   "start": 5.978,
-   "end": 6.233
+   "start": 5.979,
+   "end": 6.24
   },
   {
    "scene": "evolucion",
    "text": "En",
    "say": "En",
-   "start": 6.833,
-   "end": 7.05
+   "start": 6.91,
+   "end": 7.113
   },
   {
    "scene": "evolucion",
    "text": "2018,",
    "say": "dos mil dieciocho,",
-   "start": 7.05,
-   "end": 8.073
+   "start": 7.113,
+   "end": 8.07
   },
   {
    "scene": "evolucion",
    "text": "el",
    "say": "el",
-   "start": 8.273,
-   "end": 8.49
+   "start": 8.2,
+   "end": 8.398
   },
   {
    "scene": "evolucion",
    "text": "64 %",
    "say": "sesenta y cuatro por ciento",
-   "start": 8.49,
-   "end": 9.948
+   "start": 8.398,
+   "end": 9.728
   },
   {
    "scene": "evolucion",
    "text": "tenía",
    "say": "tenía",
-   "start": 9.948,
-   "end": 10.352
+   "start": 9.728,
+   "end": 10.095
   },
   {
    "scene": "evolucion",
    "text": "web.",
    "say": "web.",
-   "start": 10.352,
-   "end": 10.631
+   "start": 10.095,
+   "end": 10.35
   },
   {
    "scene": "evolucion",
    "text": "Hoy",
    "say": "Hoy",
-   "start": 10.951,
-   "end": 11.184
+   "start": 10.76,
+   "end": 10.794
   },
   {
    "scene": "evolucion",
    "text": "ya",
    "say": "ya",
-   "start": 11.184,
-   "end": 11.418
+   "start": 10.794,
+   "end": 10.829
   },
   {
    "scene": "evolucion",
    "text": "son",
    "say": "son",
-   "start": 11.418,
-   "end": 11.718
+   "start": 10.829,
+   "end": 10.873
   },
   {
    "scene": "evolucion",
    "text": "el",
    "say": "el",
-   "start": 11.718,
-   "end": 11.951
+   "start": 10.873,
+   "end": 10.907
   },
   {
    "scene": "evolucion",
    "text": "83 %.",
    "say": "ochenta y tres.",
-   "start": 11.951,
-   "end": 12.785
+   "start": 10.907,
+   "end": 11.03
   },
   {
    "scene": "evolucion",
    "text": "Y",
    "say": "Y",
-   "start": 13.105,
-   "end": 13.231
+   "start": 11.18,
+   "end": 11.339
   },
   {
    "scene": "evolucion",
    "text": "en",
    "say": "en",
-   "start": 13.231,
-   "end": 13.407
+   "start": 11.339,
+   "end": 11.562
   },
   {
    "scene": "evolucion",
    "text": "el",
    "say": "el",
-   "start": 13.407,
-   "end": 13.583
+   "start": 11.562,
+   "end": 11.785
   },
   {
    "scene": "evolucion",
    "text": "último",
    "say": "último",
-   "start": 13.583,
-   "end": 13.959
+   "start": 11.785,
+   "end": 12.263
   },
   {
    "scene": "evolucion",
    "text": "año,",
    "say": "año,",
-   "start": 13.959,
-   "end": 14.185
+   "start": 12.263,
+   "end": 12.55
   },
   {
    "scene": "evolucion",
    "text": "un",
    "say": "un",
-   "start": 14.375,
-   "end": 14.567
+   "start": 13.02,
+   "end": 13.116
   },
   {
    "scene": "evolucion",
    "text": "12 %",
    "say": "doce por ciento",
-   "start": 14.567,
-   "end": 15.36
+   "start": 13.116,
+   "end": 13.516
   },
   {
    "scene": "evolucion",
    "text": "estrenó",
    "say": "estrenó",
-   "start": 15.36,
-   "end": 15.77
+   "start": 13.516,
+   "end": 13.722
   },
   {
    "scene": "evolucion",
    "text": "la",
    "say": "la",
-   "start": 15.77,
-   "end": 15.962
+   "start": 13.722,
+   "end": 13.819
   },
   {
    "scene": "evolucion",
    "text": "suya.",
    "say": "suya.",
-   "start": 15.962,
-   "end": 16.263
+   "start": 13.819,
+   "end": 13.97
   },
   {
    "scene": "fuera",
    "text": "Entre",
    "say": "Entre",
-   "start": 16.813,
-   "end": 17.064
+   "start": 14.52,
+   "end": 14.905
   },
   {
    "scene": "fuera",
    "text": "los",
    "say": "los",
-   "start": 17.064,
-   "end": 17.27
+   "start": 14.905,
+   "end": 15.22
   },
   {
    "scene": "fuera",
    "text": "que",
    "say": "que",
-   "start": 17.27,
-   "end": 17.43
+   "start": 15.22,
+   "end": 15.465
   },
   {
    "scene": "fuera",
    "text": "no",
    "say": "no",
-   "start": 17.43,
-   "end": 17.59
+   "start": 15.465,
+   "end": 15.71
   },
   {
    "scene": "fuera",
    "text": "la",
    "say": "la",
-   "start": 17.59,
-   "end": 17.75
+   "start": 15.71,
+   "end": 15.955
   },
   {
    "scene": "fuera",
    "text": "tienen,",
    "say": "tienen,",
-   "start": 17.75,
-   "end": 18.093
+   "start": 15.955,
+   "end": 16.48
   },
   {
    "scene": "fuera",
    "text": "el",
    "say": "el",
-   "start": 18.353,
-   "end": 18.546
+   "start": 17.08,
+   "end": 17.162
   },
   {
    "scene": "fuera",
    "text": "28 %",
    "say": "veintiocho por ciento",
-   "start": 18.546,
-   "end": 19.676
+   "start": 17.162,
+   "end": 17.645
   },
   {
    "scene": "fuera",
    "text": "ni",
    "say": "ni",
-   "start": 19.676,
-   "end": 19.869
+   "start": 17.645,
+   "end": 17.727
   },
   {
    "scene": "fuera",
    "text": "siquiera",
    "say": "siquiera",
-   "start": 19.869,
-   "end": 20.282
+   "start": 17.727,
+   "end": 17.904
   },
   {
    "scene": "fuera",
    "text": "existe",
    "say": "existe",
-   "start": 20.282,
-   "end": 20.751
+   "start": 17.904,
+   "end": 18.104
   },
   {
    "scene": "fuera",
    "text": "online.",
    "say": "onláin.",
-   "start": 20.751,
-   "end": 21.165
+   "start": 18.104,
+   "end": 18.28
   },
   {
    "scene": "fuera",
    "text": "Y",
    "say": "Y",
-   "start": 21.485,
-   "end": 21.617
+   "start": 18.45,
+   "end": 18.609
   },
   {
    "scene": "fuera",
    "text": "más",
    "say": "más",
-   "start": 21.617,
-   "end": 21.855
+   "start": 18.609,
+   "end": 18.894
   },
   {
    "scene": "fuera",
    "text": "de",
    "say": "de",
-   "start": 21.855,
-   "end": 22.04
+   "start": 18.894,
+   "end": 19.117
   },
   {
    "scene": "fuera",
    "text": "un",
    "say": "un",
-   "start": 22.04,
-   "end": 22.225
+   "start": 19.117,
+   "end": 19.339
   },
   {
    "scene": "fuera",
    "text": "tercio",
    "say": "tercio",
-   "start": 22.225,
-   "end": 22.621
+   "start": 19.339,
+   "end": 19.815
   },
   {
    "scene": "fuera",
    "text": "cree",
    "say": "cree",
-   "start": 22.621,
-   "end": 22.859
+   "start": 19.815,
+   "end": 20.1
   },
   {
    "scene": "fuera",
    "text": "que",
    "say": "que",
-   "start": 22.859,
-   "end": 23.044
+   "start": 20.1,
+   "end": 20.323
   },
   {
    "scene": "fuera",
    "text": "no",
    "say": "no",
-   "start": 23.044,
-   "end": 23.229
+   "start": 20.323,
+   "end": 20.545
   },
   {
    "scene": "fuera",
    "text": "la",
    "say": "la",
-   "start": 23.229,
-   "end": 23.414
+   "start": 20.545,
+   "end": 20.767
   },
   {
    "scene": "fuera",
    "text": "necesita.",
    "say": "necesita.",
-   "start": 23.414,
-   "end": 23.917
+   "start": 20.767,
+   "end": 21.37
   },
   {
    "scene": "importa",
    "text": "¿Y",
    "say": "¿Y",
-   "start": 24.517,
-   "end": 24.698
+   "start": 21.92,
+   "end": 22.344
   },
   {
    "scene": "importa",
    "text": "en",
    "say": "en",
-   "start": 24.698,
-   "end": 24.953
+   "start": 22.344,
+   "end": 22.938
   },
   {
    "scene": "importa",
    "text": "España?",
    "say": "España?",
-   "start": 24.953,
-   "end": 25.498
+   "start": 22.938,
+   "end": 24.21
   },
   {
    "scene": "importa",
    "text": "Solo",
    "say": "Solo",
-   "start": 25.818,
-   "end": 26.153
+   "start": 24.8,
+   "end": 24.858
   },
   {
    "scene": "importa",
    "text": "el",
    "say": "el",
-   "start": 26.153,
-   "end": 26.367
+   "start": 24.858,
+   "end": 24.894
   },
   {
    "scene": "importa",
    "text": "37 %",
    "say": "treinta y siete por ciento",
-   "start": 26.367,
-   "end": 27.738
+   "start": 24.894,
+   "end": 25.13
   },
   {
    "scene": "importa",
    "text": "de",
    "say": "de",
-   "start": 27.738,
-   "end": 27.951
+   "start": 25.13,
+   "end": 25.167
   },
   {
    "scene": "importa",
    "text": "las",
    "say": "las",
-   "start": 27.951,
-   "end": 28.226
+   "start": 25.167,
+   "end": 25.214
   },
   {
    "scene": "importa",
    "text": "microempresas",
    "say": "microempresas",
-   "start": 28.226,
-   "end": 28.988
+   "start": 25.214,
+   "end": 25.345
   },
   {
    "scene": "importa",
    "text": "tiene",
    "say": "tiene",
-   "start": 28.988,
-   "end": 29.384
+   "start": 25.345,
+   "end": 25.413
   },
   {
    "scene": "importa",
    "text": "web.",
    "say": "web.",
-   "start": 29.384,
-   "end": 29.658
+   "start": 25.413,
+   "end": 25.46
   },
   {
    "scene": "importa",
    "text": "En",
    "say": "En",
-   "start": 29.978,
-   "end": 30.165
+   "start": 25.97,
+   "end": 26.202
   },
   {
    "scene": "importa",
    "text": "Estados",
    "say": "Estados",
-   "start": 30.165,
-   "end": 30.618
+   "start": 26.202,
+   "end": 26.765
   },
   {
    "scene": "importa",
    "text": "Unidos,",
    "say": "Unidos,",
-   "start": 30.618,
-   "end": 31.018
+   "start": 26.765,
+   "end": 27.262
   },
   {
    "scene": "importa",
    "text": "el",
    "say": "el",
-   "start": 31.348,
-   "end": 31.546
+   "start": 27.262,
+   "end": 27.494
   },
   {
    "scene": "importa",
    "text": "97 %",
    "say": "noventa y siete por ciento",
-   "start": 31.546,
-   "end": 32.879
+   "start": 27.494,
+   "end": 29.051
   },
   {
    "scene": "importa",
    "text": "de",
    "say": "de",
-   "start": 32.879,
-   "end": 33.077
+   "start": 29.051,
+   "end": 29.283
   },
   {
    "scene": "importa",
    "text": "los",
    "say": "los",
-   "start": 33.077,
-   "end": 33.332
+   "start": 29.283,
+   "end": 29.581
   },
   {
    "scene": "importa",
    "text": "consumidores",
    "say": "consumidores",
-   "start": 33.332,
-   "end": 34.041
+   "start": 29.581,
+   "end": 30.409
   },
   {
    "scene": "importa",
    "text": "mira",
    "say": "mira",
-   "start": 34.041,
-   "end": 34.296
+   "start": 30.409,
+   "end": 30.707
   },
   {
    "scene": "importa",
    "text": "reseñas",
    "say": "reseñas",
-   "start": 34.296,
-   "end": 34.778
+   "start": 30.707,
+   "end": 31.27
   },
   {
    "scene": "importa",
    "text": "online",
    "say": "onláin",
-   "start": 34.778,
-   "end": 35.203
+   "start": 31.27,
+   "end": 31.767
   },
   {
    "scene": "importa",
    "text": "antes",
    "say": "antes",
-   "start": 35.203,
-   "end": 35.571
+   "start": 31.767,
+   "end": 32.198
   },
   {
    "scene": "importa",
    "text": "de",
    "say": "de",
-   "start": 35.571,
-   "end": 35.77
+   "start": 32.198,
+   "end": 32.43
   },
   {
    "scene": "importa",
    "text": "elegir",
    "say": "elegir",
-   "start": 35.77,
-   "end": 36.195
+   "start": 32.43,
+   "end": 32.927
   },
   {
    "scene": "importa",
    "text": "negocio.",
    "say": "negocio.",
-   "start": 36.195,
-   "end": 36.677
+   "start": 32.927,
+   "end": 33.49
   },
   {
    "scene": "importa",
    "text": "Cuando",
    "say": "Cuando",
-   "start": 36.997,
-   "end": 37.372
+   "start": 33.68,
+   "end": 34.055
   },
   {
    "scene": "importa",
    "text": "alguien",
    "say": "alguien",
-   "start": 37.372,
-   "end": 37.747
+   "start": 34.055,
+   "end": 34.43
   },
   {
    "scene": "importa",
    "text": "te",
    "say": "te",
-   "start": 37.747,
-   "end": 37.922
+   "start": 34.43,
+   "end": 34.605
   },
   {
    "scene": "importa",
    "text": "busca,",
    "say": "busca,",
-   "start": 37.922,
-   "end": 38.247
+   "start": 34.605,
+   "end": 34.93
   },
   {
    "scene": "importa",
    "text": "tu",
    "say": "tu",
-   "start": 38.407,
-   "end": 38.592
+   "start": 35.03,
+   "end": 35.197
   },
   {
    "scene": "importa",
    "text": "web",
    "say": "web",
-   "start": 38.592,
-   "end": 38.83
+   "start": 35.197,
+   "end": 35.412
   },
   {
    "scene": "importa",
    "text": "es",
    "say": "es",
-   "start": 38.83,
-   "end": 39.015
+   "start": 35.412,
+   "end": 35.579
   },
   {
    "scene": "importa",
    "text": "tu",
    "say": "tu",
-   "start": 39.015,
-   "end": 39.201
+   "start": 35.579,
+   "end": 35.746
   },
   {
    "scene": "importa",
    "text": "primera",
    "say": "primera",
-   "start": 39.201,
-   "end": 39.545
+   "start": 35.746,
+   "end": 36.056
   },
   {
    "scene": "importa",
    "text": "impresión.",
    "say": "impresión.",
-   "start": 39.545,
-   "end": 40.047
+   "start": 36.056,
+   "end": 36.51
   },
   {
    "scene": "aporta",
    "text": "Una",
    "say": "Una",
-   "start": 40.647,
-   "end": 40.871
+   "start": 37.06,
+   "end": 37.246
   },
   {
    "scene": "aporta",
    "text": "buena",
    "say": "buena",
-   "start": 40.871,
-   "end": 41.195
+   "start": 37.246,
+   "end": 37.516
   },
   {
    "scene": "aporta",
    "text": "web",
    "say": "web",
-   "start": 41.195,
-   "end": 41.419
+   "start": 37.516,
+   "end": 37.702
   },
   {
    "scene": "aporta",
    "text": "te",
    "say": "te",
-   "start": 41.419,
-   "end": 41.593
+   "start": 37.702,
+   "end": 37.847
   },
   {
    "scene": "aporta",
    "text": "hace",
    "say": "hace",
-   "start": 41.593,
-   "end": 41.817
+   "start": 37.847,
+   "end": 38.034
   },
   {
    "scene": "aporta",
    "text": "visible",
    "say": "visible",
-   "start": 41.817,
-   "end": 42.24
+   "start": 38.034,
+   "end": 38.386
   },
   {
    "scene": "aporta",
    "text": "en",
    "say": "en",
-   "start": 42.24,
-   "end": 42.414
+   "start": 38.386,
+   "end": 38.531
   },
   {
    "scene": "aporta",
    "text": "Google,",
    "say": "Google,",
-   "start": 42.414,
-   "end": 42.737
+   "start": 38.531,
+   "end": 38.8
   },
   {
    "scene": "aporta",
    "text": "te",
    "say": "te",
-   "start": 43.007,
-   "end": 43.181
+   "start": 38.92,
+   "end": 39.177
   },
   {
    "scene": "aporta",
    "text": "da",
    "say": "da",
-   "start": 43.181,
-   "end": 43.356
+   "start": 39.177,
+   "end": 39.433
   },
   {
    "scene": "aporta",
    "text": "credibilidad,",
    "say": "credibilidad,",
-   "start": 43.356,
-   "end": 43.977
+   "start": 39.433,
+   "end": 40.35
   },
   {
    "scene": "aporta",
    "text": "capta",
    "say": "capta",
-   "start": 44.347,
-   "end": 44.711
+   "start": 40.8,
+   "end": 41.136
   },
   {
    "scene": "aporta",
    "text": "clientes",
    "say": "clientes",
-   "start": 44.711,
-   "end": 45.241
+   "start": 41.136,
+   "end": 41.628
   },
   {
    "scene": "aporta",
    "text": "las 24 horas",
    "say": "las veinticuatro horas",
-   "start": 45.241,
-   "end": 46.275
+   "start": 41.628,
+   "end": 42.586
   },
   {
    "scene": "aporta",
    "text": "y",
    "say": "y",
-   "start": 46.275,
-   "end": 46.415
+   "start": 42.586,
+   "end": 42.715
   },
   {
    "scene": "aporta",
    "text": "te",
    "say": "te",
-   "start": 46.415,
-   "end": 46.61
+   "start": 42.715,
+   "end": 42.896
   },
   {
    "scene": "aporta",
    "text": "deja",
    "say": "deja",
-   "start": 46.61,
-   "end": 46.918
+   "start": 42.896,
+   "end": 43.181
   },
   {
    "scene": "aporta",
    "text": "controlar",
    "say": "controlar",
-   "start": 46.918,
-   "end": 47.449
+   "start": 43.181,
+   "end": 43.672
   },
   {
    "scene": "aporta",
    "text": "tu",
    "say": "tu",
-   "start": 47.449,
-   "end": 47.644
+   "start": 43.672,
+   "end": 43.854
   },
   {
    "scene": "aporta",
    "text": "marca.",
    "say": "marca.",
-   "start": 47.644,
-   "end": 48.007
+   "start": 43.854,
+   "end": 44.19
   },
   {
    "scene": "promo",
    "text": "En",
    "say": "En",
-   "start": 48.557,
-   "end": 48.741
+   "start": 44.74,
+   "end": 44.895
   },
   {
    "scene": "promo",
    "text": "Nuven",
    "say": "Nuven",
-   "start": 48.741,
-   "end": 49.083
+   "start": 44.895,
+   "end": 45.183
   },
   {
    "scene": "promo",
    "text": "Digital",
    "say": "Digital",
-   "start": 49.083,
-   "end": 49.53
+   "start": 45.183,
+   "end": 45.559
   },
   {
    "scene": "promo",
    "text": "diseñamos",
    "say": "diseñamos",
-   "start": 49.53,
-   "end": 50.082
+   "start": 45.559,
+   "end": 46.024
   },
   {
    "scene": "promo",
    "text": "webs",
    "say": "webs",
-   "start": 50.082,
-   "end": 50.371
+   "start": 46.024,
+   "end": 46.267
   },
   {
    "scene": "promo",
    "text": "a",
    "say": "a",
-   "start": 50.371,
-   "end": 50.503
+   "start": 46.267,
+   "end": 46.378
   },
   {
    "scene": "promo",
    "text": "medida,",
    "say": "medida,",
-   "start": 50.503,
-   "end": 50.897
+   "start": 46.378,
+   "end": 46.71
   },
   {
    "scene": "promo",
    "text": "rápidas",
    "say": "rápidas",
-   "start": 51.267,
-   "end": 51.738
+   "start": 46.9,
+   "end": 47.17
   },
   {
    "scene": "promo",
    "text": "y",
    "say": "y",
-   "start": 51.738,
-   "end": 51.877
+   "start": 47.17,
+   "end": 47.249
   },
   {
    "scene": "promo",
    "text": "pensadas",
    "say": "pensadas",
-   "start": 51.877,
-   "end": 52.403
+   "start": 47.249,
+   "end": 47.551
   },
   {
    "scene": "promo",
    "text": "para",
    "say": "para",
-   "start": 52.403,
-   "end": 52.652
+   "start": 47.551,
+   "end": 47.694
   },
   {
    "scene": "promo",
    "text": "convertir",
    "say": "convertir",
-   "start": 52.652,
-   "end": 53.233
+   "start": 47.694,
+   "end": 48.027
   },
   {
    "scene": "promo",
    "text": "visitas",
    "say": "visitas",
-   "start": 53.233,
-   "end": 53.704
+   "start": 48.027,
+   "end": 48.297
   },
   {
    "scene": "promo",
    "text": "en",
    "say": "en",
-   "start": 53.704,
-   "end": 53.898
+   "start": 48.297,
+   "end": 48.408
   },
   {
    "scene": "promo",
    "text": "clientes.",
    "say": "clientes.",
-   "start": 53.898,
-   "end": 54.424
+   "start": 48.408,
+   "end": 48.71
   },
   {
    "scene": "promo",
    "text": "Hablemos",
    "say": "Hablemos",
-   "start": 54.744,
-   "end": 55.265
+   "start": 49.28,
+   "end": 52.145
   },
   {
    "scene": "promo",
    "text": "de",
    "say": "de",
-   "start": 55.265,
-   "end": 55.48
+   "start": 52.145,
+   "end": 53.325
   },
   {
    "scene": "promo",
    "text": "tu",
    "say": "tu",
-   "start": 55.48,
-   "end": 55.695
+   "start": 53.325,
+   "end": 54.505
   },
   {
    "scene": "promo",
    "text": "proyecto.",
    "say": "proyecto.",
-   "start": 55.695,
-   "end": 56.216
+   "start": 54.505,
+   "end": 57.37
   }
  ],
  "captions": [
   {
-   "start": 0.9,
-   "end": 2.63,
+   "start": 0.6,
+   "end": 2.74,
    "text": "¿Sabías que, en Estados Unidos,"
   },
   {
-   "start": 2.83,
-   "end": 4.447,
+   "start": 2.76,
+   "end": 4.413,
    "text": "casi 1 de cada 6 pequeños"
   },
   {
-   "start": 4.447,
-   "end": 6.353,
+   "start": 4.413,
+   "end": 6.36,
    "text": "negocios sigue sin página web?"
   },
   {
-   "start": 6.833,
-   "end": 10.751,
+   "start": 6.91,
+   "end": 10.47,
    "text": "En 2018, el 64 % tenía web."
   },
   {
-   "start": 10.951,
-   "end": 12.905,
+   "start": 10.76,
+   "end": 11.15,
    "text": "Hoy ya son el 83 %."
   },
   {
-   "start": 13.105,
-   "end": 16.383,
+   "start": 11.18,
+   "end": 14.09,
    "text": "Y en el último año, un 12 % estrenó la suya."
   },
   {
-   "start": 16.813,
-   "end": 18.213,
+   "start": 14.52,
+   "end": 16.6,
    "text": "Entre los que no la tienen,"
   },
   {
-   "start": 18.353,
-   "end": 21.285,
+   "start": 17.08,
+   "end": 18.4,
    "text": "el 28 % ni siquiera existe online."
   },
   {
-   "start": 21.485,
-   "end": 24.037,
+   "start": 18.45,
+   "end": 21.49,
    "text": "Y más de un tercio cree que no la necesita."
   },
   {
-   "start": 24.517,
-   "end": 25.618,
+   "start": 21.92,
+   "end": 24.33,
    "text": "¿Y en España?"
   },
   {
-   "start": 25.818,
-   "end": 29.778,
+   "start": 24.8,
+   "end": 25.58,
    "text": "Solo el 37 % de las microempresas tiene web."
   },
   {
-   "start": 29.978,
-   "end": 31.138,
+   "start": 25.97,
+   "end": 27.262,
    "text": "En Estados Unidos,"
   },
   {
-   "start": 31.348,
-   "end": 34.296,
+   "start": 27.262,
+   "end": 30.707,
    "text": "el 97 % de los consumidores mira"
   },
   {
-   "start": 34.296,
-   "end": 36.797,
+   "start": 30.707,
+   "end": 33.61,
    "text": "reseñas online antes de elegir negocio."
   },
   {
-   "start": 36.997,
-   "end": 38.367,
+   "start": 33.68,
+   "end": 35.03,
    "text": "Cuando alguien te busca,"
   },
   {
-   "start": 38.407,
-   "end": 40.167,
+   "start": 35.03,
+   "end": 36.63,
    "text": "tu web es tu primera impresión."
   },
   {
-   "start": 40.647,
-   "end": 42.857,
+   "start": 37.06,
+   "end": 38.92,
    "text": "Una buena web te hace visible en Google,"
   },
   {
-   "start": 43.007,
-   "end": 44.097,
+   "start": 38.92,
+   "end": 40.47,
    "text": "te da credibilidad,"
   },
   {
-   "start": 44.347,
-   "end": 46.415,
+   "start": 40.8,
+   "end": 42.715,
    "text": "capta clientes las 24 horas y"
   },
   {
-   "start": 46.415,
-   "end": 48.127,
+   "start": 42.715,
+   "end": 44.31,
    "text": "te deja controlar tu marca."
   },
   {
-   "start": 48.557,
-   "end": 51.017,
+   "start": 44.74,
+   "end": 46.83,
    "text": "En Nuven Digital diseñamos webs a medida,"
   },
   {
-   "start": 51.267,
-   "end": 52.652,
+   "start": 46.9,
+   "end": 47.694,
    "text": "rápidas y pensadas para"
   },
   {
-   "start": 52.652,
-   "end": 54.544,
+   "start": 47.694,
+   "end": 48.83,
    "text": "convertir visitas en clientes."
   },
   {
-   "start": 54.744,
-   "end": 56.336,
+   "start": 49.28,
+   "end": 57.49,
    "text": "Hablemos de tu proyecto."
   }
  ]

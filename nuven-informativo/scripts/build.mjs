@@ -58,7 +58,7 @@ function render(variant) {
     LOCKUP_UP: v ? -260 : -150,
     WORDMARK: [..."NUVEN"].map((c) => `<span>${c}</span>`).join(""),
     WORDSUB: [..."DIGITAL"].map((c) => `<span>${c}</span>`).join(""),
-    MUSIC_VOL: "0.85",
+    MUSIC_VOL: "0.6",
     SFX_VOL: "0.75",
     CARVE: "",
   };

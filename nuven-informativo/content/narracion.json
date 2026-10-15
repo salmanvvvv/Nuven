@@ -1,14 +1,16 @@
 {
-  "_info": "Locución y subtítulos. Cada frase se sintetiza entera (entonación natural). {lo que se dice|lo que se lee} separa la pronunciación del texto en pantalla, p. ej. {sesenta y cuatro por ciento|64 %}. Edita aquí y ejecuta: npm run voice",
+  "_info": "Locución y subtítulos. Cada frase se sintetiza entera (entonación natural). {lo que se dice|lo que se lee} separa la pronunciación del texto en pantalla, p. ej. {sesenta y cuatro por ciento|64 %}. Edita aquí y ejecuta: npm run voice Con una voz grabada (ElevenLabs, locutor): npm run align -- <archivo>.",
   "voice": "ef_dora",
   "speed": 1.0,
-  "lead_in": 0.9,
+  "lead_in": 0.6,
   "sentence_gap": 0.32,
   "scene_gap": 0.55,
   "scenes": [
     {
       "id": "gancho",
-      "sentences": ["¿Sabías que, en Estados Unidos, casi {uno de cada seis|1 de cada 6} pequeños negocios sigue sin página web?"],
+      "sentences": [
+        "¿Sabías que, en Estados Unidos, casi {uno de cada seis|1 de cada 6} pequeños negocios sigue sin página web?"
+      ],
       "tail": 0.6
     },
     {
@@ -40,7 +42,9 @@
     },
     {
       "id": "aporta",
-      "sentences": ["Una buena web te hace visible en Google, te da credibilidad, capta clientes {las veinticuatro horas|las 24 horas} y te deja controlar tu marca."],
+      "sentences": [
+        "Una buena web te hace visible en Google, te da credibilidad, capta clientes {las veinticuatro horas|las 24 horas} y te deja controlar tu marca."
+      ],
       "tail": 0.5
     },
     {
@@ -49,7 +53,9 @@
         "En Nuven Digital diseñamos webs a medida, rápidas y pensadas para convertir visitas en clientes.",
         "Hablemos de tu proyecto."
       ],
-      "tail": 3.2
+      "tail": 2.6
     }
-  ]
+  ],
+  "recording_scene_pause": 0.55,
+  "recording": "assets/audio/voz-elevenlabs.mp3"
 }
