@@ -1,6 +1,6 @@
 # Nuven Digital — vídeo informativo «¿Tu negocio existe en internet?»
 
-Vídeo de unos 59 s en español: educa sobre cuántos pequeños negocios tienen o no web y por qué importa, y cierra con Nuven Digital. Construido con **HyperFrames** (workflow `faceless-explainer`): HTML + GSAP, voz en off de ElevenLabs (alineada al guion), música y efectos generados por código, carve de la música contra la voz y subtítulos sincronizados por construcción.
+Vídeo de unos 59 s en español: educa sobre cuántos pequeños negocios tienen o no web y por qué importa, y cierra con Nuven Digital. Construido con **HyperFrames** (workflow `faceless-explainer`): HTML + GSAP, voz en off de ElevenLabs (alineada al guion), música y efectos generados por código, carve de la música contra la voz. Sin subtítulos quemados (se exporta un `.srt` sincronizado).
 
 ## Entregables (`out/`)
 
@@ -8,7 +8,7 @@ Vídeo de unos 59 s en español: educa sobre cuántos pequeños negocios tienen 
 | --- | --- |
 | `nuven-informativo-16x9.mp4` | 1920×1080 · H.264 · 30 fps · AAC · −14 LUFS · < 15 MB |
 | `nuven-informativo-9x16.mp4` | 1080×1920 para Reels, TikTok y Shorts (márgenes seguros) |
-| `nuven-informativo.srt` | subtítulos en español |
+| `nuven-informativo.srt` | subtítulos en español (opcionales: el vídeo no los lleva quemados; para volver a quemarlos, `SHOW_CAPTIONS = true` en `scripts/build.mjs`) |
 | `poster.jpg` · `poster-9x16.jpg` | miniaturas (tarjeta final: logo + «Hablemos de tu proyecto») |
 | `guion.md` · `datos.md` · `creditos.md` | guion con tiempos, fuentes de cada cifra, licencias |
 

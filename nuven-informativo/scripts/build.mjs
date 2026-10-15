@@ -32,8 +32,11 @@ const STORE = (off) =>
   `<div class="store${off ? " off" : ""}"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 26 14 12h36l4 14" /><path d="M10 26c0 4 3 6 6.5 6S23 30 23 26c0 4 3 6 6.5 6s6.5-2 6.5-6c0 4 3 6 6.5 6s6.5-2 6.5-6" /><path d="M14 32v20h36V32" /><path d="M27 52V40h10v12" /></svg><span>${off ? "SIN WEB" : "CON WEB"}</span></div>`;
 const STAR = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z" /></svg>`;
 
+/** Burned-in subtitles: off by request. The .srt is still exported for platforms with optional captions. */
+const SHOW_CAPTIONS = false;
+
 /** subtitle cards; numbers (and the % sign) are bold so the key figure reads first */
-const captions = data.captions
+const captions = (SHOW_CAPTIONS ? data.captions : [])
   .map((c) => {
     const html = esc(c.text).replace(/(\d+(?:[.,]\d+)?(?:\s?%)?(?: de cada \d+)?)/g, "<b>$1</b>");
     return `<div class="cap" data-in="${r3(c.start)}" data-out="${r3(c.end)}">${html}</div>`;
