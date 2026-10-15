@@ -4,3 +4,4 @@ renders
 snapshots
 assets/audio/.narration-24k.wav
 assets/audio/*.wav
+__pycache__
