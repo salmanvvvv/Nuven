@@ -1,0 +1,55 @@
+{
+  "_info": "Locución y subtítulos. Cada frase se sintetiza entera (entonación natural). {lo que se dice|lo que se lee} separa la pronunciación del texto en pantalla, p. ej. {sesenta y cuatro por ciento|64 %}. Edita aquí y ejecuta: npm run voice",
+  "voice": "ef_dora",
+  "speed": 1.0,
+  "lead_in": 0.9,
+  "sentence_gap": 0.32,
+  "scene_gap": 0.55,
+  "scenes": [
+    {
+      "id": "gancho",
+      "sentences": ["¿Sabías que, en Estados Unidos, casi {uno de cada seis|1 de cada 6} pequeños negocios sigue sin página web?"],
+      "tail": 0.6
+    },
+    {
+      "id": "evolucion",
+      "sentences": [
+        "En {dos mil dieciocho|2018}, el {sesenta y cuatro por ciento|64 %} tenía web.",
+        "Hoy ya son el {ochenta y tres|83 %}.",
+        "Y en el último año, un {doce por ciento|12 %} estrenó la suya."
+      ],
+      "tail": 0.5
+    },
+    {
+      "id": "fuera",
+      "sentences": [
+        "Entre los que no la tienen, el {veintiocho por ciento|28 %} ni siquiera existe {onláin|online}.",
+        "Y más de un tercio cree que no la necesita."
+      ],
+      "tail": 0.6
+    },
+    {
+      "id": "importa",
+      "sentences": [
+        "¿Y en España?",
+        "Solo el {treinta y siete por ciento|37 %} de las microempresas tiene web.",
+        "En Estados Unidos, el {noventa y siete por ciento|97 %} de los consumidores mira reseñas {onláin|online} antes de elegir negocio.",
+        "Cuando alguien te busca, tu web es tu primera impresión."
+      ],
+      "tail": 0.6
+    },
+    {
+      "id": "aporta",
+      "sentences": ["Una buena web te hace visible en Google, te da credibilidad, capta clientes {las veinticuatro horas|las 24 horas} y te deja controlar tu marca."],
+      "tail": 0.5
+    },
+    {
+      "id": "promo",
+      "sentences": [
+        "En Nuven Digital diseñamos webs a medida, rápidas y pensadas para convertir visitas en clientes.",
+        "Hablemos de tu proyecto."
+      ],
+      "tail": 3.2
+    }
+  ]
+}

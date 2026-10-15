@@ -16,6 +16,8 @@ const eslintConfig = defineConfig([
     ".claude/**",
     // Motion-graphics project (separate Vite + HyperFrames app with its own config).
     "motion/**",
+    // Informative video (HyperFrames project, plain HTML + scripts).
+    "nuven-informativo/**",
   ]),
 ]);
 

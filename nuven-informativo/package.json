@@ -6,6 +6,15 @@
     "dev": "npx --yes hyperframes@0.8.162 preview",
     "check": "npx --yes hyperframes@0.8.162 check",
     "render": "npx --yes hyperframes@0.8.162 render",
-    "publish": "npx --yes hyperframes@0.8.162 publish"
+    "publish": "npx --yes hyperframes@0.8.162 publish",
+    "voice": "python3 scripts/voice.py && node scripts/cues.mjs",
+    "music": "node scripts/music.mjs",
+    "build": "node scripts/build.mjs",
+    "audio": "npm run voice && npm run music && npm run build",
+    "render:all": "npm run build && npx --yes hyperframes@0.8.162 render . -o renders/master-16x9.mp4 && npx --yes hyperframes@0.8.162 render vertical -o renders/master-9x16.mp4 && node scripts/export.mjs",
+    "export": "node scripts/export.mjs"
+  },
+  "devDependencies": {
+    "@hyperframes/core": "^0.8.162"
   }
 }
