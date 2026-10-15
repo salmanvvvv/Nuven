@@ -1,15 +1,14 @@
 # Créditos y licencias — «¿Tu negocio existe en internet?» · Nuven Digital
 
 ## Voz en off
-- **Motor:** Kokoro-82M (TTS local, sin conexión) vía `kokoro-onnx`, con la voz **`ef_dora`** (femenina, español) a velocidad 1.0. Fonética del español con `espeak-ng`.
-- **Licencia:** los pesos de Kokoro-82M se publican con licencia **Apache 2.0**, que permite el uso comercial. `kokoro-onnx` tiene licencia MIT y `espeak-ng`, GPL-3.0 (solo se usa como herramienta; no se distribuye con el vídeo).
-- **Por qué esta voz:** en el entorno no había claves de HeyGen, ElevenLabs ni de otros proveedores. Kokoro es el TTS local que ofrece `/media-use`.
-- **Limitación honesta:** la voz es sintética y el acento no es plenamente de España. Además, no pude escucharla: la elegí y la comprobé por medios técnicos (pronunciación vía espeak y sincronía).
-- **Mejora recomendada:** ElevenLabs (`eleven_multilingual_v2`) con una voz es-ES, o una locución humana. Para cambiarla basta con sustituir `assets/audio/narration.wav`, volver a calcular los tiempos (`npm run voice`) y reconstruir (`npm run build`).
+- **Locución:** ElevenLabs, voz de la Voice Library **«Martin Osborne — Polished and Energetic»** (Professional Voice Clone), en español. La generó el cliente y se entregó como `assets/audio/voz-elevenlabs.mp3`.
+- **Integración:** `scripts/align.py` encuentra las pausas reales de la toma, las asigna a las frases y comas del guion (12/12 frases y 9/10 comas ancladas) y calcula los tiempos de cada palabra. De ahí salen los subtítulos y el `.srt`. La toma no se edita; solo se añade algo de aire en los cambios de escena y se normaliza a −16 LUFS antes de la mezcla final.
+- **Licencia — revisar:** el uso comercial de voces de ElevenLabs requiere un **plan de pago** activo en el momento de generar el audio. El plan gratuito exige atribución y no permite uso comercial. Si se generó con el plan gratuito, vuelve a generarlo con un plan de pago antes de publicar el vídeo en canales de la agencia.
+- *Versión anterior (descartada):* Kokoro-82M `ef_dora`, TTS local (Apache 2.0). Sigue disponible con `npm run voice`.
 
 ## Música de fondo
-- **Origen:** composición original **generada por código** en `scripts/music.mjs`: síntesis propia (osciladores, filtros y reverb escritos en el proyecto), sin samples ni grabaciones de terceros.
-- **Estilo:** electrónica minimalista suave a 96 BPM, en La menor (Am9 – Fmaj7 – Cmaj7 – G6/9), la misma armonía que el reel de marca de Nuven.
+- **Origen:** composición original **generada por código** en `scripts/music.mjs`: síntesis propia (piano eléctrico FM, bajo, bombo, shaker, palmas, pad y arpegio), sin samples ni grabaciones de terceros.
+- **Estilo:** pop electrónico cálido y luminoso a 112 BPM, en Do mayor (Fmaj9 – G6 – Em7 – Am7), con resolución en Cmaj9 sobre la tarjeta final. Se eligió más enérgica que la primera versión (La menor, 96 BPM) para acompañar a la nueva voz.
 - **Licencia:** obra propia de Nuven Digital, libre de derechos de terceros. Se puede usar en web, redes y anuncios sin atribución.
 
 ## Efectos de sonido
