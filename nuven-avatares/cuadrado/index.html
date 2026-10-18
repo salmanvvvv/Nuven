@@ -614,7 +614,7 @@
         tl.fromTo("#tap", { opacity: 0.9, scale: 0.3 }, { opacity: 0, scale: 1.8, duration: 0.5, ease: "power2.out", immediateRender: false }, K("botón para reservar") + 0.55);
         tl.fromTo("#book", { scale: 1 }, { scale: 0.95, duration: 0.12, yoyo: true, repeat: 1, ease: "power2.inOut", immediateRender: false }, K("botón para reservar") + 0.5);
         // phone and mascot leave
-        tl.to("#phoneWrap", { y: 900, opacity: 0, duration: 0.55, ease: "power3.in" }, S.informatica.start - 0.15);
+        tl.to("#phoneWrap", { y: -160, scale: 0.92, opacity: 0, duration: 0.45, ease: "power3.in" }, S.informatica.start - 0.15);
         mascotOut(S.informatica.start - 0.15);
 
         // ═════ 5 · INFORMÁTICA ════════════════════════════════════════
@@ -650,7 +650,7 @@
         tl.fromTo("#phoneWrap", { opacity: 0, y: 120, scale: 0.8 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "expo.out", immediateRender: false }, K("te vean") - 0.1);
         tl.fromTo("#resMe", { scale: 0.9, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.8)", immediateRender: false }, K("te vean") + 0.3);
         mascot("neutral", K("te vean") + 0.4);
-        tl.to("#phoneWrap", { y: 900, opacity: 0, duration: 0.45, ease: "power3.in" }, S.marca.start - 0.2);
+        tl.to("#phoneWrap", { y: -160, scale: 0.92, opacity: 0, duration: 0.4, ease: "power3.in" }, S.marca.start - 0.2);
         mascotOut(S.marca.start - 0.2);
 
         // ═════ 7 · MARCA ══════════════════════════════════════════════
