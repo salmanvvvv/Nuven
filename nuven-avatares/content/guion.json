@@ -1,0 +1,119 @@
+{
+  "_info": "Fuente del guion para scripts/timing.py. Texto exacto de assets/voz.mp3. *palabra* o *varias palabras* = palabra clave (resaltado en subtítulos y disparador de animación). speaker: pro = protagonista, nar = narradora. Si cambias la voz: actualiza el texto aquí y ejecuta npm run timing.",
+  "audio": "assets/voz.mp3",
+  "scenes": [
+    {
+      "id": "gancho",
+      "lines": [
+        {
+          "speaker": "pro",
+          "text": "Abrió hace *seis meses* y ya me ha quitado *clientes*."
+        },
+        {
+          "speaker": "pro",
+          "text": "Yo llevo *veinte años* en esta calle."
+        }
+      ]
+    },
+    {
+      "id": "seva",
+      "lines": [
+        {
+          "speaker": "pro",
+          "text": "No lo *entiendo*."
+        },
+        {
+          "speaker": "pro",
+          "text": "Mi trabajo es *mejor*, mis precios son *los mismos*,"
+        },
+        {
+          "speaker": "pro",
+          "text": "y aun así el cliente se va *con el otro*."
+        }
+      ]
+    },
+    {
+      "id": "busqueda",
+      "lines": [
+        {
+          "speaker": "nar",
+          "text": "La razón es *sencilla*."
+        },
+        {
+          "speaker": "nar",
+          "text": "El cliente no ha visto tus *veinte años*… te ha buscado en el *móvil* y *no te ha encontrado*."
+        }
+      ]
+    },
+    {
+      "id": "ficha",
+      "lines": [
+        {
+          "speaker": "nar",
+          "text": "Al otro *sí*."
+        },
+        {
+          "speaker": "nar",
+          "text": "Con sus *fotos*, sus *reseñas* y un *botón para reservar*."
+        }
+      ]
+    },
+    {
+      "id": "informatica",
+      "lines": [
+        {
+          "speaker": "pro",
+          "text": "Pero yo de *informática* no sé *nada*."
+        }
+      ]
+    },
+    {
+      "id": "web",
+      "lines": [
+        {
+          "speaker": "nar",
+          "text": "*No hace falta*."
+        },
+        {
+          "speaker": "nar",
+          "text": "Una *web* con tu *trabajo*, tus *opiniones* y tu *teléfono*, para que *te vean* antes de llamar al otro."
+        }
+      ]
+    },
+    {
+      "id": "marca",
+      "lines": [
+        {
+          "speaker": "pro",
+          "text": "¿Y *quién* me la hace?"
+        },
+        {
+          "speaker": "nar",
+          "text": "*Nuven Digital*."
+        }
+      ]
+    },
+    {
+      "id": "valores",
+      "lines": [
+        {
+          "speaker": "nar",
+          "text": "Webs *a medida*, *rápidas*, pensadas para que *te encuentren*… y *te llamen*."
+        }
+      ]
+    },
+    {
+      "id": "cierre",
+      "lines": [
+        {
+          "speaker": "nar",
+          "text": "*Veinte años* de oficio merecen *ser vistos*."
+        },
+        {
+          "speaker": "nar",
+          "text": "*Escríbenos* y hablamos de tu *proyecto*."
+        }
+      ]
+    }
+  ]
+}

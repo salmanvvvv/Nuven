@@ -1,0 +1,110 @@
+{
+ "_info": "Whisper small (sherpa-onnx) sobre assets/voz.mp3, por tramos entre pausas. Lo usa scripts/timing.py para anclar el guion.",
+ "chunks": [
+  {
+   "start": 0.0,
+   "end": 3.33,
+   "text": "Abrió hace seis meses y ya me ha quitado clientes."
+  },
+  {
+   "start": 3.33,
+   "end": 5.69,
+   "text": "Yo llevo 20 años en esta calle."
+  },
+  {
+   "start": 5.69,
+   "end": 6.86,
+   "text": "No lo entiendo."
+  },
+  {
+   "start": 6.86,
+   "end": 9.875,
+   "text": "Mi trabajo es mejor, mis precios son los mismos."
+  },
+  {
+   "start": 9.875,
+   "end": 12.315,
+   "text": "y aun así el cliente se va con el otro."
+  },
+  {
+   "start": 12.315,
+   "end": 13.92,
+   "text": "La razón es sencilla."
+  },
+  {
+   "start": 13.92,
+   "end": 16.58,
+   "text": "El cliente no ha visto tus 20 años."
+  },
+  {
+   "start": 16.58,
+   "end": 18.05,
+   "text": "que ha buscado en el móvil"
+  },
+  {
+   "start": 18.05,
+   "end": 19.36,
+   "text": "y no te ha encontrado."
+  },
+  {
+   "start": 19.36,
+   "end": 20.49,
+   "text": "al otro sí."
+  },
+  {
+   "start": 20.49,
+   "end": 24.175,
+   "text": "con sus fotos, sus reseñas y un botón para reservar."
+  },
+  {
+   "start": 24.175,
+   "end": 26.58,
+   "text": "Pero yo de informática no sé nada."
+  },
+  {
+   "start": 26.58,
+   "end": 27.645,
+   "text": "No hace falta."
+  },
+  {
+   "start": 27.645,
+   "end": 30.98,
+   "text": "Una web con tu trabajo, tus opiniones y tu teléfono."
+  },
+  {
+   "start": 30.98,
+   "end": 33.24,
+   "text": "para que te vean antes de llamar al otro."
+  },
+  {
+   "start": 33.24,
+   "end": 34.635,
+   "text": "¿Y quién me la hace?"
+  },
+  {
+   "start": 34.635,
+   "end": 35.98,
+   "text": "Núven Digital"
+  },
+  {
+   "start": 35.98,
+   "end": 39.745,
+   "text": "Web a medida, rápidas, pensadas para que te encuentren."
+  },
+  {
+   "start": 39.745,
+   "end": 40.75,
+   "text": "y te llamen."
+  },
+  {
+   "start": 40.75,
+   "end": 43.6,
+   "text": "20 años de oficio merecen ser vistos."
+  },
+  {
+   "start": 43.6,
+   "end": 45.949,
+   "text": "Escríbenos y hablamos de tu proyecto."
+  }
+ ]
+}

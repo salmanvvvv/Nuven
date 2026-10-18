@@ -1,0 +1,7 @@
+node_modules
+renders
+.hyperframes
+snapshots
+models
+__pycache__
+assets/audio/*.wav

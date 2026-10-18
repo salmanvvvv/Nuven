@@ -1,0 +1,14 @@
+{
+  "name": "nuven-avatares",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.8.171 preview",
+    "check": "npx --yes hyperframes@0.8.171 check",
+    "render": "npx --yes hyperframes@0.8.171 render",
+    "publish": "npx --yes hyperframes@0.8.171 publish",
+    "asr": "python3 scripts/asr_chunks.py \"${WHISPER_DIR:-models/sherpa-onnx-whisper-small}\"",
+    "timing": "python3 scripts/timing.py",
+    "avatars": "python3 scripts/cutout.py"
+  }
+}

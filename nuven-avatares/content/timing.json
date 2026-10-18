@@ -1,0 +1,2433 @@
+{
+ "_info": "Generado por scripts/timing.py a partir de assets/voz.mp3 y content/guion.json. No editar a mano.",
+ "audio": "assets/voz.mp3",
+ "duration": 45.949,
+ "speech": [
+  0.05,
+  45.81
+ ],
+ "scenes": [
+  {
+   "id": "gancho",
+   "vo_start": 0.05,
+   "vo_end": 5.54,
+   "start": 0.0,
+   "end": 5.59
+  },
+  {
+   "id": "seva",
+   "vo_start": 5.84,
+   "vo_end": 12.06,
+   "start": 5.59,
+   "end": 12.27
+  },
+  {
+   "id": "busqueda",
+   "vo_start": 12.57,
+   "vo_end": 19.17,
+   "start": 12.27,
+   "end": 19.25
+  },
+  {
+   "id": "ficha",
+   "vo_start": 19.55,
+   "vo_end": 23.99,
+   "start": 19.25,
+   "end": 24.06
+  },
+  {
+   "id": "informatica",
+   "vo_start": 24.36,
+   "vo_end": 26.41,
+   "start": 24.06,
+   "end": 26.46
+  },
+  {
+   "id": "web",
+   "vo_start": 26.75,
+   "vo_end": 33.04,
+   "start": 26.46,
+   "end": 33.14
+  },
+  {
+   "id": "marca",
+   "vo_start": 33.44,
+   "vo_end": 35.83,
+   "start": 33.14,
+   "end": 35.88
+  },
+  {
+   "id": "valores",
+   "vo_start": 36.13,
+   "vo_end": 40.59,
+   "start": 35.88,
+   "end": 40.64
+  },
+  {
+   "id": "cierre",
+   "vo_start": 40.91,
+   "vo_end": 45.81,
+   "start": 40.64,
+   "end": 45.949
+  }
+ ],
+ "lines": [
+  {
+   "id": "0.0",
+   "scene": "gancho",
+   "speaker": "pro",
+   "start": 0.05,
+   "end": 3.16,
+   "text": "Abrió hace seis meses y ya me ha quitado clientes."
+  },
+  {
+   "id": "0.1",
+   "scene": "gancho",
+   "speaker": "pro",
+   "start": 3.5,
+   "end": 5.54,
+   "text": "Yo llevo veinte años en esta calle."
+  },
+  {
+   "id": "1.0",
+   "scene": "seva",
+   "speaker": "pro",
+   "start": 5.84,
+   "end": 6.74,
+   "text": "No lo entiendo."
+  },
+  {
+   "id": "1.1",
+   "scene": "seva",
+   "speaker": "pro",
+   "start": 6.98,
+   "end": 9.72,
+   "text": "Mi trabajo es mejor, mis precios son los mismos,"
+  },
+  {
+   "id": "1.2",
+   "scene": "seva",
+   "speaker": "pro",
+   "start": 10.03,
+   "end": 12.06,
+   "text": "y aun así el cliente se va con el otro."
+  },
+  {
+   "id": "2.0",
+   "scene": "busqueda",
+   "speaker": "nar",
+   "start": 12.57,
+   "end": 13.75,
+   "text": "La razón es sencilla."
+  },
+  {
+   "id": "2.1",
+   "scene": "busqueda",
+   "speaker": "nar",
+   "start": 14.09,
+   "end": 19.17,
+   "text": "El cliente no ha visto tus veinte años… te ha buscado en el móvil y no te ha encontrado."
+  },
+  {
+   "id": "3.0",
+   "scene": "ficha",
+   "speaker": "nar",
+   "start": 19.55,
+   "end": 20.33,
+   "text": "Al otro sí."
+  },
+  {
+   "id": "3.1",
+   "scene": "ficha",
+   "speaker": "nar",
+   "start": 20.65,
+   "end": 23.99,
+   "text": "Con sus fotos, sus reseñas y un botón para reservar."
+  },
+  {
+   "id": "4.0",
+   "scene": "informatica",
+   "speaker": "pro",
+   "start": 24.36,
+   "end": 26.41,
+   "text": "Pero yo de informática no sé nada."
+  },
+  {
+   "id": "5.0",
+   "scene": "web",
+   "speaker": "nar",
+   "start": 26.75,
+   "end": 27.49,
+   "text": "No hace falta."
+  },
+  {
+   "id": "5.1",
+   "scene": "web",
+   "speaker": "nar",
+   "start": 27.8,
+   "end": 33.04,
+   "text": "Una web con tu trabajo, tus opiniones y tu teléfono, para que te vean antes de llamar al otro."
+  },
+  {
+   "id": "6.0",
+   "scene": "marca",
+   "speaker": "pro",
+   "start": 33.44,
+   "end": 34.43,
+   "text": "¿Y quién me la hace?"
+  },
+  {
+   "id": "6.1",
+   "scene": "marca",
+   "speaker": "nar",
+   "start": 34.84,
+   "end": 35.83,
+   "text": "Nuven Digital."
+  },
+  {
+   "id": "7.0",
+   "scene": "valores",
+   "speaker": "nar",
+   "start": 36.13,
+   "end": 40.59,
+   "text": "Webs a medida, rápidas, pensadas para que te encuentren… y te llamen."
+  },
+  {
+   "id": "8.0",
+   "scene": "cierre",
+   "speaker": "nar",
+   "start": 40.91,
+   "end": 43.44,
+   "text": "Veinte años de oficio merecen ser vistos."
+  },
+  {
+   "id": "8.1",
+   "scene": "cierre",
+   "speaker": "nar",
+   "start": 43.76,
+   "end": 45.81,
+   "text": "Escríbenos y hablamos de tu proyecto."
+  }
+ ],
+ "keywords": [
+  {
+   "text": "seis meses",
+   "line": "0.0",
+   "scene": "gancho",
+   "words": [
+    2,
+    3
+   ],
+   "start": 0.66,
+   "end": 1.392
+  },
+  {
+   "text": "clientes",
+   "line": "0.0",
+   "scene": "gancho",
+   "words": [
+    9
+   ],
+   "start": 2.581,
+   "end": 3.16
+  },
+  {
+   "text": "veinte años",
+   "line": "0.1",
+   "scene": "gancho",
+   "words": [
+    12,
+    13
+   ],
+   "start": 4.003,
+   "end": 4.73
+  },
+  {
+   "text": "entiendo",
+   "line": "1.0",
+   "scene": "seva",
+   "words": [
+    19
+   ],
+   "start": 6.222,
+   "end": 6.74
+  },
+  {
+   "text": "mejor",
+   "line": "1.1",
+   "scene": "seva",
+   "words": [
+    23
+   ],
+   "start": 7.783,
+   "end": 8.142
+  },
+  {
+   "text": "los mismos",
+   "line": "1.1",
+   "scene": "seva",
+   "words": [
+    27,
+    28
+   ],
+   "start": 9.056,
+   "end": 9.72
+  },
+  {
+   "text": "con el otro",
+   "line": "1.2",
+   "scene": "seva",
+   "words": [
+    36,
+    37,
+    38
+   ],
+   "start": 11.47,
+   "end": 12.06
+  },
+  {
+   "text": "sencilla",
+   "line": "2.0",
+   "scene": "busqueda",
+   "words": [
+    42
+   ],
+   "start": 13.294,
+   "end": 13.75
+  },
+  {
+   "text": "veinte años",
+   "line": "2.1",
+   "scene": "busqueda",
+   "words": [
+    49,
+    50
+   ],
+   "start": 15.569,
+   "end": 16.232
+  },
+  {
+   "text": "móvil",
+   "line": "2.1",
+   "scene": "busqueda",
+   "words": [
+    56
+   ],
+   "start": 17.588,
+   "end": 17.89
+  },
+  {
+   "text": "no te ha encontrado",
+   "line": "2.1",
+   "scene": "busqueda",
+   "words": [
+    58,
+    59,
+    60,
+    61
+   ],
+   "start": 18.317,
+   "end": 19.17
+  },
+  {
+   "text": "sí",
+   "line": "3.0",
+   "scene": "ficha",
+   "words": [
+    64
+   ],
+   "start": 20.093,
+   "end": 20.33
+  },
+  {
+   "text": "fotos",
+   "line": "3.1",
+   "scene": "ficha",
+   "words": [
+    67
+   ],
+   "start": 21.197,
+   "end": 21.591
+  },
+  {
+   "text": "reseñas",
+   "line": "3.1",
+   "scene": "ficha",
+   "words": [
+    69
+   ],
+   "start": 21.865,
+   "end": 22.381
+  },
+  {
+   "text": "botón para reservar",
+   "line": "3.1",
+   "scene": "ficha",
+   "words": [
+    72,
+    73,
+    74
+   ],
+   "start": 22.745,
+   "end": 23.99
+  },
+  {
+   "text": "informática",
+   "line": "4.0",
+   "scene": "informatica",
+   "words": [
+    78
+   ],
+   "start": 25.006,
+   "end": 25.708
+  },
+  {
+   "text": "nada",
+   "line": "4.0",
+   "scene": "informatica",
+   "words": [
+    81
+   ],
+   "start": 26.101,
+   "end": 26.41
+  },
+  {
+   "text": "No hace falta",
+   "line": "5.0",
+   "scene": "web",
+   "words": [
+    82,
+    83,
+    84
+   ],
+   "start": 26.75,
+   "end": 27.49
+  },
+  {
+   "text": "web",
+   "line": "5.1",
+   "scene": "web",
+   "words": [
+    86
+   ],
+   "start": 28.052,
+   "end": 28.304
+  },
+  {
+   "text": "trabajo",
+   "line": "5.1",
+   "scene": "web",
+   "words": [
+    89
+   ],
+   "start": 28.752,
+   "end": 29.172
+  },
+  {
+   "text": "opiniones",
+   "line": "5.1",
+   "scene": "web",
+   "words": [
+    91
+   ],
+   "start": 29.424,
+   "end": 30.012
+  },
+  {
+   "text": "teléfono",
+   "line": "5.1",
+   "scene": "web",
+   "words": [
+    94
+   ],
+   "start": 30.348,
+   "end": 30.88
+  },
+  {
+   "text": "te vean",
+   "line": "5.1",
+   "scene": "web",
+   "words": [
+    97,
+    98
+   ],
+   "start": 31.458,
+   "end": 31.883
+  },
+  {
+   "text": "quién",
+   "line": "6.0",
+   "scene": "marca",
+   "words": [
+    105
+   ],
+   "start": 33.567,
+   "end": 33.846
+  },
+  {
+   "text": "Nuven Digital",
+   "line": "6.1",
+   "scene": "marca",
+   "words": [
+    109,
+    110
+   ],
+   "start": 34.84,
+   "end": 35.83
+  },
+  {
+   "text": "a medida",
+   "line": "7.0",
+   "scene": "valores",
+   "words": [
+    112,
+    113
+   ],
+   "start": 36.476,
+   "end": 37.105
+  },
+  {
+   "text": "rápidas",
+   "line": "7.0",
+   "scene": "valores",
+   "words": [
+    114
+   ],
+   "start": 37.105,
+   "end": 37.639
+  },
+  {
+   "text": "te encuentren",
+   "line": "7.0",
+   "scene": "valores",
+   "words": [
+    118,
+    119
+   ],
+   "start": 38.74,
+   "end": 39.62
+  },
+  {
+   "text": "te llamen",
+   "line": "7.0",
+   "scene": "valores",
+   "words": [
+    121,
+    122
+   ],
+   "start": 40.014,
+   "end": 40.59
+  },
+  {
+   "text": "Veinte años",
+   "line": "8.0",
+   "scene": "cierre",
+   "words": [
+    123,
+    124
+   ],
+   "start": 40.91,
+   "end": 41.666
+  },
+  {
+   "text": "ser vistos",
+   "line": "8.0",
+   "scene": "cierre",
+   "words": [
+    128,
+    129
+   ],
+   "start": 42.742,
+   "end": 43.44
+  },
+  {
+   "text": "Escríbenos",
+   "line": "8.1",
+   "scene": "cierre",
+   "words": [
+    130
+   ],
+   "start": 43.76,
+   "end": 44.342
+  },
+  {
+   "text": "proyecto",
+   "line": "8.1",
+   "scene": "cierre",
+   "words": [
+    135
+   ],
+   "start": 45.339,
+   "end": 45.81
+  }
+ ],
+ "captions": [
+  {
+   "start": 0.05,
+   "end": 2.123,
+   "speaker": "pro",
+   "rows": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     3,
+     4,
+     5,
+     6,
+     7
+    ]
+   ],
+   "text": "Abrió hace seis meses y ya me ha"
+  },
+  {
+   "start": 2.123,
+   "end": 3.5,
+   "speaker": "pro",
+   "rows": [
+    [
+     8,
+     9
+    ]
+   ],
+   "text": "quitado clientes."
+  },
+  {
+   "start": 3.5,
+   "end": 5.233,
+   "speaker": "pro",
+   "rows": [
+    [
+     10,
+     11,
+     12
+    ],
+    [
+     13,
+     14,
+     15
+    ]
+   ],
+   "text": "Yo llevo veinte años en esta"
+  },
+  {
+   "start": 5.233,
+   "end": 5.84,
+   "speaker": "pro",
+   "rows": [
+    [
+     16
+    ]
+   ],
+   "text": "calle."
+  },
+  {
+   "start": 5.84,
+   "end": 6.98,
+   "speaker": "pro",
+   "rows": [
+    [
+     17,
+     18,
+     19
+    ]
+   ],
+   "text": "No lo entiendo."
+  },
+  {
+   "start": 6.98,
+   "end": 8.142,
+   "speaker": "pro",
+   "rows": [
+    [
+     20,
+     21,
+     22
+    ],
+    [
+     23
+    ]
+   ],
+   "text": "Mi trabajo es mejor,"
+  },
+  {
+   "start": 8.142,
+   "end": 10.03,
+   "speaker": "pro",
+   "rows": [
+    [
+     24,
+     25,
+     26
+    ],
+    [
+     27,
+     28
+    ]
+   ],
+   "text": "mis precios son los mismos,"
+  },
+  {
+   "start": 10.03,
+   "end": 11.682,
+   "speaker": "pro",
+   "rows": [
+    [
+     29,
+     30,
+     31,
+     32
+    ],
+    [
+     33,
+     34,
+     35,
+     36
+    ]
+   ],
+   "text": "y aun así el cliente se va con"
+  },
+  {
+   "start": 11.682,
+   "end": 12.56,
+   "speaker": "pro",
+   "rows": [
+    [
+     37,
+     38
+    ]
+   ],
+   "text": "el otro."
+  },
+  {
+   "start": 12.57,
+   "end": 14.09,
+   "speaker": "nar",
+   "rows": [
+    [
+     39,
+     40,
+     41
+    ],
+    [
+     42
+    ]
+   ],
+   "text": "La razón es sencilla."
+  },
+  {
+   "start": 14.09,
+   "end": 15.951,
+   "speaker": "nar",
+   "rows": [
+    [
+     43,
+     44,
+     45,
+     46
+    ],
+    [
+     47,
+     48,
+     49
+    ]
+   ],
+   "text": "El cliente no ha visto tus veinte"
+  },
+  {
+   "start": 15.951,
+   "end": 17.588,
+   "speaker": "nar",
+   "rows": [
+    [
+     50,
+     51,
+     52
+    ],
+    [
+     53,
+     54,
+     55
+    ]
+   ],
+   "text": "años… te ha buscado en el"
+  },
+  {
+   "start": 17.588,
+   "end": 19.55,
+   "speaker": "nar",
+   "rows": [
+    [
+     56,
+     57,
+     58,
+     59,
+     60
+    ],
+    [
+     61
+    ]
+   ],
+   "text": "móvil y no te ha encontrado."
+  },
+  {
+   "start": 19.55,
+   "end": 20.65,
+   "speaker": "nar",
+   "rows": [
+    [
+     62,
+     63,
+     64
+    ]
+   ],
+   "text": "Al otro sí."
+  },
+  {
+   "start": 20.65,
+   "end": 21.591,
+   "speaker": "nar",
+   "rows": [
+    [
+     65,
+     66,
+     67
+    ]
+   ],
+   "text": "Con sus fotos,"
+  },
+  {
+   "start": 21.591,
+   "end": 23.413,
+   "speaker": "nar",
+   "rows": [
+    [
+     68,
+     69,
+     70,
+     71
+    ],
+    [
+     72,
+     73
+    ]
+   ],
+   "text": "sus reseñas y un botón para"
+  },
+  {
+   "start": 23.413,
+   "end": 24.36,
+   "speaker": "nar",
+   "rows": [
+    [
+     74
+    ]
+   ],
+   "text": "reservar."
+  },
+  {
+   "start": 24.36,
+   "end": 26.101,
+   "speaker": "pro",
+   "rows": [
+    [
+     75,
+     76,
+     77
+    ],
+    [
+     78,
+     79,
+     80
+    ]
+   ],
+   "text": "Pero yo de informática no sé"
+  },
+  {
+   "start": 26.101,
+   "end": 26.75,
+   "speaker": "pro",
+   "rows": [
+    [
+     81
+    ]
+   ],
+   "text": "nada."
+  },
+  {
+   "start": 26.75,
+   "end": 27.8,
+   "speaker": "nar",
+   "rows": [
+    [
+     82,
+     83,
+     84
+    ]
+   ],
+   "text": "No hace falta."
+  },
+  {
+   "start": 27.8,
+   "end": 29.172,
+   "speaker": "nar",
+   "rows": [
+    [
+     85,
+     86,
+     87,
+     88
+    ],
+    [
+     89
+    ]
+   ],
+   "text": "Una web con tu trabajo,"
+  },
+  {
+   "start": 29.172,
+   "end": 31.08,
+   "speaker": "nar",
+   "rows": [
+    [
+     90,
+     91,
+     92,
+     93
+    ],
+    [
+     94
+    ]
+   ],
+   "text": "tus opiniones y tu teléfono,"
+  },
+  {
+   "start": 31.08,
+   "end": 32.827,
+   "speaker": "nar",
+   "rows": [
+    [
+     95,
+     96,
+     97,
+     98
+    ],
+    [
+     99,
+     100,
+     101,
+     102
+    ]
+   ],
+   "text": "para que te vean antes de llamar al"
+  },
+  {
+   "start": 32.827,
+   "end": 33.44,
+   "speaker": "nar",
+   "rows": [
+    [
+     103
+    ]
+   ],
+   "text": "otro."
+  },
+  {
+   "start": 33.44,
+   "end": 34.84,
+   "speaker": "pro",
+   "rows": [
+    [
+     104,
+     105,
+     106,
+     107
+    ],
+    [
+     108
+    ]
+   ],
+   "text": "¿Y quién me la hace?"
+  },
+  {
+   "start": 34.84,
+   "end": 36.13,
+   "speaker": "nar",
+   "rows": [
+    [
+     109,
+     110
+    ]
+   ],
+   "text": "Nuven Digital."
+  },
+  {
+   "start": 36.13,
+   "end": 37.105,
+   "speaker": "nar",
+   "rows": [
+    [
+     111,
+     112,
+     113
+    ]
+   ],
+   "text": "Webs a medida,"
+  },
+  {
+   "start": 37.105,
+   "end": 38.96,
+   "speaker": "nar",
+   "rows": [
+    [
+     114,
+     115
+    ],
+    [
+     116,
+     117,
+     118
+    ]
+   ],
+   "text": "rápidas, pensadas para que te"
+  },
+  {
+   "start": 38.96,
+   "end": 40.91,
+   "speaker": "nar",
+   "rows": [
+    [
+     119,
+     120,
+     121
+    ],
+    [
+     122
+    ]
+   ],
+   "text": "encuentren… y te llamen."
+  },
+  {
+   "start": 40.91,
+   "end": 43.004,
+   "speaker": "nar",
+   "rows": [
+    [
+     123,
+     124,
+     125
+    ],
+    [
+     126,
+     127,
+     128
+    ]
+   ],
+   "text": "Veinte años de oficio merecen ser"
+  },
+  {
+   "start": 43.004,
+   "end": 43.76,
+   "speaker": "nar",
+   "rows": [
+    [
+     129
+    ]
+   ],
+   "text": "vistos."
+  },
+  {
+   "start": 43.76,
+   "end": 45.339,
+   "speaker": "nar",
+   "rows": [
+    [
+     130,
+     131
+    ],
+    [
+     132,
+     133,
+     134
+    ]
+   ],
+   "text": "Escríbenos y hablamos de tu"
+  },
+  {
+   "start": 45.339,
+   "end": 45.949,
+   "speaker": "nar",
+   "rows": [
+    [
+     135
+    ]
+   ],
+   "text": "proyecto."
+  }
+ ],
+ "words": [
+  {
+   "i": 0,
+   "text": "Abrió",
+   "scene": "gancho",
+   "line": "0.0",
+   "speaker": "pro",
+   "key": false,
+   "start": 0.05,
+   "end": 0.385
+  },
+  {
+   "i": 1,
+   "text": "hace",
+   "scene": "gancho",
+   "line": "0.0",
+   "speaker": "pro",
+   "key": false,
+   "start": 0.385,
+   "end": 0.66
+  },
+  {
+   "i": 2,
+   "text": "seis",
+   "scene": "gancho",
+   "line": "0.0",
+   "speaker": "pro",
+   "key": true,
+   "start": 0.66,
+   "end": 0.995
+  },
+  {
+   "i": 3,
+   "text": "meses",
+   "scene": "gancho",
+   "line": "0.0",
+   "speaker": "pro",
+   "key": true,
+   "start": 0.995,
+   "end": 1.392
+  },
+  {
+   "i": 4,
+   "text": "y",
+   "scene": "gancho",
+   "line": "0.0",
+   "speaker": "pro",
+   "key": false,
+   "start": 1.392,
+   "end": 1.544
+  },
+  {
+   "i": 5,
+   "text": "ya",
+   "scene": "gancho",
+   "line": "0.0",
+   "speaker": "pro",
+   "key": false,
+   "start": 1.544,
+   "end": 1.757
+  },
+  {
+   "i": 6,
+   "text": "me",
+   "scene": "gancho",
+   "line": "0.0",
+   "speaker": "pro",
+   "key": false,
+   "start": 1.757,
+   "end": 1.971
+  },
+  {
+   "i": 7,
+   "text": "ha",
+   "scene": "gancho",
+   "line": "0.0",
+   "speaker": "pro",
+   "key": false,
+   "start": 1.971,
+   "end": 2.123
+  },
+  {
+   "i": 8,
+   "text": "quitado",
+   "scene": "gancho",
+   "line": "0.0",
+   "speaker": "pro",
+   "key": false,
+   "start": 2.123,
+   "end": 2.581
+  },
+  {
+   "i": 9,
+   "text": "clientes.",
+   "scene": "gancho",
+   "line": "0.0",
+   "speaker": "pro",
+   "key": true,
+   "start": 2.581,
+   "end": 3.16
+  },
+  {
+   "i": 10,
+   "text": "Yo",
+   "scene": "gancho",
+   "line": "0.1",
+   "speaker": "pro",
+   "key": false,
+   "start": 3.5,
+   "end": 3.696
+  },
+  {
+   "i": 11,
+   "text": "llevo",
+   "scene": "gancho",
+   "line": "0.1",
+   "speaker": "pro",
+   "key": false,
+   "start": 3.696,
+   "end": 4.003
+  },
+  {
+   "i": 12,
+   "text": "veinte",
+   "scene": "gancho",
+   "line": "0.1",
+   "speaker": "pro",
+   "key": true,
+   "start": 4.003,
+   "end": 4.422
+  },
+  {
+   "i": 13,
+   "text": "años",
+   "scene": "gancho",
+   "line": "0.1",
+   "speaker": "pro",
+   "key": true,
+   "start": 4.422,
+   "end": 4.73
+  },
+  {
+   "i": 14,
+   "text": "en",
+   "scene": "gancho",
+   "line": "0.1",
+   "speaker": "pro",
+   "key": false,
+   "start": 4.73,
+   "end": 4.925
+  },
+  {
+   "i": 15,
+   "text": "esta",
+   "scene": "gancho",
+   "line": "0.1",
+   "speaker": "pro",
+   "key": false,
+   "start": 4.925,
+   "end": 5.233
+  },
+  {
+   "i": 16,
+   "text": "calle.",
+   "scene": "gancho",
+   "line": "0.1",
+   "speaker": "pro",
+   "key": false,
+   "start": 5.233,
+   "end": 5.54
+  },
+  {
+   "i": 17,
+   "text": "No",
+   "scene": "seva",
+   "line": "1.0",
+   "speaker": "pro",
+   "key": false,
+   "start": 5.84,
+   "end": 6.031
+  },
+  {
+   "i": 18,
+   "text": "lo",
+   "scene": "seva",
+   "line": "1.0",
+   "speaker": "pro",
+   "key": false,
+   "start": 6.031,
+   "end": 6.222
+  },
+  {
+   "i": 19,
+   "text": "entiendo.",
+   "scene": "seva",
+   "line": "1.0",
+   "speaker": "pro",
+   "key": true,
+   "start": 6.222,
+   "end": 6.74
+  },
+  {
+   "i": 20,
+   "text": "Mi",
+   "scene": "seva",
+   "line": "1.1",
+   "speaker": "pro",
+   "key": false,
+   "start": 6.98,
+   "end": 7.174
+  },
+  {
+   "i": 21,
+   "text": "trabajo",
+   "scene": "seva",
+   "line": "1.1",
+   "speaker": "pro",
+   "key": false,
+   "start": 7.174,
+   "end": 7.589
+  },
+  {
+   "i": 22,
+   "text": "es",
+   "scene": "seva",
+   "line": "1.1",
+   "speaker": "pro",
+   "key": false,
+   "start": 7.589,
+   "end": 7.783
+  },
+  {
+   "i": 23,
+   "text": "mejor,",
+   "scene": "seva",
+   "line": "1.1",
+   "speaker": "pro",
+   "key": true,
+   "start": 7.783,
+   "end": 8.142
+  },
+  {
+   "i": 24,
+   "text": "mis",
+   "scene": "seva",
+   "line": "1.1",
+   "speaker": "pro",
+   "key": false,
+   "start": 8.142,
+   "end": 8.392
+  },
+  {
+   "i": 25,
+   "text": "precios",
+   "scene": "seva",
+   "line": "1.1",
+   "speaker": "pro",
+   "key": false,
+   "start": 8.392,
+   "end": 8.807
+  },
+  {
+   "i": 26,
+   "text": "son",
+   "scene": "seva",
+   "line": "1.1",
+   "speaker": "pro",
+   "key": false,
+   "start": 8.807,
+   "end": 9.056
+  },
+  {
+   "i": 27,
+   "text": "los",
+   "scene": "seva",
+   "line": "1.1",
+   "speaker": "pro",
+   "key": true,
+   "start": 9.056,
+   "end": 9.305
+  },
+  {
+   "i": 28,
+   "text": "mismos,",
+   "scene": "seva",
+   "line": "1.1",
+   "speaker": "pro",
+   "key": true,
+   "start": 9.305,
+   "end": 9.72
+  },
+  {
+   "i": 29,
+   "text": "y",
+   "scene": "seva",
+   "line": "1.2",
+   "speaker": "pro",
+   "key": false,
+   "start": 10.03,
+   "end": 10.148
+  },
+  {
+   "i": 30,
+   "text": "aun",
+   "scene": "seva",
+   "line": "1.2",
+   "speaker": "pro",
+   "key": false,
+   "start": 10.148,
+   "end": 10.36
+  },
+  {
+   "i": 31,
+   "text": "así",
+   "scene": "seva",
+   "line": "1.2",
+   "speaker": "pro",
+   "key": false,
+   "start": 10.36,
+   "end": 10.573
+  },
+  {
+   "i": 32,
+   "text": "el",
+   "scene": "seva",
+   "line": "1.2",
+   "speaker": "pro",
+   "key": false,
+   "start": 10.573,
+   "end": 10.738
+  },
+  {
+   "i": 33,
+   "text": "cliente",
+   "scene": "seva",
+   "line": "1.2",
+   "speaker": "pro",
+   "key": false,
+   "start": 10.738,
+   "end": 11.139
+  },
+  {
+   "i": 34,
+   "text": "se",
+   "scene": "seva",
+   "line": "1.2",
+   "speaker": "pro",
+   "key": false,
+   "start": 11.139,
+   "end": 11.305
+  },
+  {
+   "i": 35,
+   "text": "va",
+   "scene": "seva",
+   "line": "1.2",
+   "speaker": "pro",
+   "key": false,
+   "start": 11.305,
+   "end": 11.47
+  },
+  {
+   "i": 36,
+   "text": "con",
+   "scene": "seva",
+   "line": "1.2",
+   "speaker": "pro",
+   "key": true,
+   "start": 11.47,
+   "end": 11.682
+  },
+  {
+   "i": 37,
+   "text": "el",
+   "scene": "seva",
+   "line": "1.2",
+   "speaker": "pro",
+   "key": true,
+   "start": 11.682,
+   "end": 11.848
+  },
+  {
+   "i": 38,
+   "text": "otro.",
+   "scene": "seva",
+   "line": "1.2",
+   "speaker": "pro",
+   "key": true,
+   "start": 11.848,
+   "end": 12.06
+  },
+  {
+   "i": 39,
+   "text": "La",
+   "scene": "busqueda",
+   "line": "2.0",
+   "speaker": "nar",
+   "key": false,
+   "start": 12.57,
+   "end": 12.758
+  },
+  {
+   "i": 40,
+   "text": "razón",
+   "scene": "busqueda",
+   "line": "2.0",
+   "speaker": "nar",
+   "key": false,
+   "start": 12.758,
+   "end": 13.106
+  },
+  {
+   "i": 41,
+   "text": "es",
+   "scene": "busqueda",
+   "line": "2.0",
+   "speaker": "nar",
+   "key": false,
+   "start": 13.106,
+   "end": 13.294
+  },
+  {
+   "i": 42,
+   "text": "sencilla.",
+   "scene": "busqueda",
+   "line": "2.0",
+   "speaker": "nar",
+   "key": true,
+   "start": 13.294,
+   "end": 13.75
+  },
+  {
+   "i": 43,
+   "text": "El",
+   "scene": "busqueda",
+   "line": "2.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 14.09,
+   "end": 14.268
+  },
+  {
+   "i": 44,
+   "text": "cliente",
+   "scene": "busqueda",
+   "line": "2.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 14.268,
+   "end": 14.702
+  },
+  {
+   "i": 45,
+   "text": "no",
+   "scene": "busqueda",
+   "line": "2.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 14.702,
+   "end": 14.88
+  },
+  {
+   "i": 46,
+   "text": "ha",
+   "scene": "busqueda",
+   "line": "2.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 14.88,
+   "end": 15.008
+  },
+  {
+   "i": 47,
+   "text": "visto",
+   "scene": "busqueda",
+   "line": "2.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 15.008,
+   "end": 15.339
+  },
+  {
+   "i": 48,
+   "text": "tus",
+   "scene": "busqueda",
+   "line": "2.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 15.339,
+   "end": 15.569
+  },
+  {
+   "i": 49,
+   "text": "veinte",
+   "scene": "busqueda",
+   "line": "2.1",
+   "speaker": "nar",
+   "key": true,
+   "start": 15.569,
+   "end": 15.951
+  },
+  {
+   "i": 50,
+   "text": "años…",
+   "scene": "busqueda",
+   "line": "2.1",
+   "speaker": "nar",
+   "key": true,
+   "start": 15.951,
+   "end": 16.232
+  },
+  {
+   "i": 51,
+   "text": "te",
+   "scene": "busqueda",
+   "line": "2.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 16.232,
+   "end": 16.41
+  },
+  {
+   "i": 52,
+   "text": "ha",
+   "scene": "busqueda",
+   "line": "2.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 16.75,
+   "end": 16.866
+  },
+  {
+   "i": 53,
+   "text": "buscado",
+   "scene": "busqueda",
+   "line": "2.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 16.866,
+   "end": 17.262
+  },
+  {
+   "i": 54,
+   "text": "en",
+   "scene": "busqueda",
+   "line": "2.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 17.262,
+   "end": 17.425
+  },
+  {
+   "i": 55,
+   "text": "el",
+   "scene": "busqueda",
+   "line": "2.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 17.425,
+   "end": 17.588
+  },
+  {
+   "i": 56,
+   "text": "móvil",
+   "scene": "busqueda",
+   "line": "2.1",
+   "speaker": "nar",
+   "key": true,
+   "start": 17.588,
+   "end": 17.89
+  },
+  {
+   "i": 57,
+   "text": "y",
+   "scene": "busqueda",
+   "line": "2.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 18.21,
+   "end": 18.317
+  },
+  {
+   "i": 58,
+   "text": "no",
+   "scene": "busqueda",
+   "line": "2.1",
+   "speaker": "nar",
+   "key": true,
+   "start": 18.317,
+   "end": 18.466
+  },
+  {
+   "i": 59,
+   "text": "te",
+   "scene": "busqueda",
+   "line": "2.1",
+   "speaker": "nar",
+   "key": true,
+   "start": 18.466,
+   "end": 18.615
+  },
+  {
+   "i": 60,
+   "text": "ha",
+   "scene": "busqueda",
+   "line": "2.1",
+   "speaker": "nar",
+   "key": true,
+   "start": 18.615,
+   "end": 18.722
+  },
+  {
+   "i": 61,
+   "text": "encontrado.",
+   "scene": "busqueda",
+   "line": "2.1",
+   "speaker": "nar",
+   "key": true,
+   "start": 18.722,
+   "end": 19.17
+  },
+  {
+   "i": 62,
+   "text": "Al",
+   "scene": "ficha",
+   "line": "3.0",
+   "speaker": "nar",
+   "key": false,
+   "start": 19.55,
+   "end": 19.787
+  },
+  {
+   "i": 63,
+   "text": "otro",
+   "scene": "ficha",
+   "line": "3.0",
+   "speaker": "nar",
+   "key": false,
+   "start": 19.787,
+   "end": 20.093
+  },
+  {
+   "i": 64,
+   "text": "sí.",
+   "scene": "ficha",
+   "line": "3.0",
+   "speaker": "nar",
+   "key": true,
+   "start": 20.093,
+   "end": 20.33
+  },
+  {
+   "i": 65,
+   "text": "Con",
+   "scene": "ficha",
+   "line": "3.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 20.65,
+   "end": 20.923
+  },
+  {
+   "i": 66,
+   "text": "sus",
+   "scene": "ficha",
+   "line": "3.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 20.923,
+   "end": 21.197
+  },
+  {
+   "i": 67,
+   "text": "fotos,",
+   "scene": "ficha",
+   "line": "3.1",
+   "speaker": "nar",
+   "key": true,
+   "start": 21.197,
+   "end": 21.591
+  },
+  {
+   "i": 68,
+   "text": "sus",
+   "scene": "ficha",
+   "line": "3.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 21.591,
+   "end": 21.865
+  },
+  {
+   "i": 69,
+   "text": "reseñas",
+   "scene": "ficha",
+   "line": "3.1",
+   "speaker": "nar",
+   "key": true,
+   "start": 21.865,
+   "end": 22.381
+  },
+  {
+   "i": 70,
+   "text": "y",
+   "scene": "ficha",
+   "line": "3.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 22.381,
+   "end": 22.533
+  },
+  {
+   "i": 71,
+   "text": "un",
+   "scene": "ficha",
+   "line": "3.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 22.533,
+   "end": 22.745
+  },
+  {
+   "i": 72,
+   "text": "botón",
+   "scene": "ficha",
+   "line": "3.1",
+   "speaker": "nar",
+   "key": true,
+   "start": 22.745,
+   "end": 23.14
+  },
+  {
+   "i": 73,
+   "text": "para",
+   "scene": "ficha",
+   "line": "3.1",
+   "speaker": "nar",
+   "key": true,
+   "start": 23.14,
+   "end": 23.413
+  },
+  {
+   "i": 74,
+   "text": "reservar.",
+   "scene": "ficha",
+   "line": "3.1",
+   "speaker": "nar",
+   "key": true,
+   "start": 23.413,
+   "end": 23.99
+  },
+  {
+   "i": 75,
+   "text": "Pero",
+   "scene": "informatica",
+   "line": "4.0",
+   "speaker": "pro",
+   "key": false,
+   "start": 24.36,
+   "end": 24.613
+  },
+  {
+   "i": 76,
+   "text": "yo",
+   "scene": "informatica",
+   "line": "4.0",
+   "speaker": "pro",
+   "key": false,
+   "start": 24.613,
+   "end": 24.809
+  },
+  {
+   "i": 77,
+   "text": "de",
+   "scene": "informatica",
+   "line": "4.0",
+   "speaker": "pro",
+   "key": false,
+   "start": 24.809,
+   "end": 25.006
+  },
+  {
+   "i": 78,
+   "text": "informática",
+   "scene": "informatica",
+   "line": "4.0",
+   "speaker": "pro",
+   "key": true,
+   "start": 25.006,
+   "end": 25.708
+  },
+  {
+   "i": 79,
+   "text": "no",
+   "scene": "informatica",
+   "line": "4.0",
+   "speaker": "pro",
+   "key": false,
+   "start": 25.708,
+   "end": 25.905
+  },
+  {
+   "i": 80,
+   "text": "sé",
+   "scene": "informatica",
+   "line": "4.0",
+   "speaker": "pro",
+   "key": false,
+   "start": 25.905,
+   "end": 26.101
+  },
+  {
+   "i": 81,
+   "text": "nada.",
+   "scene": "informatica",
+   "line": "4.0",
+   "speaker": "pro",
+   "key": true,
+   "start": 26.101,
+   "end": 26.41
+  },
+  {
+   "i": 82,
+   "text": "No",
+   "scene": "web",
+   "line": "5.0",
+   "speaker": "nar",
+   "key": true,
+   "start": 26.75,
+   "end": 26.929
+  },
+  {
+   "i": 83,
+   "text": "hace",
+   "scene": "web",
+   "line": "5.0",
+   "speaker": "nar",
+   "key": true,
+   "start": 26.929,
+   "end": 27.158
+  },
+  {
+   "i": 84,
+   "text": "falta.",
+   "scene": "web",
+   "line": "5.0",
+   "speaker": "nar",
+   "key": true,
+   "start": 27.158,
+   "end": 27.49
+  },
+  {
+   "i": 85,
+   "text": "Una",
+   "scene": "web",
+   "line": "5.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 27.8,
+   "end": 28.052
+  },
+  {
+   "i": 86,
+   "text": "web",
+   "scene": "web",
+   "line": "5.1",
+   "speaker": "nar",
+   "key": true,
+   "start": 28.052,
+   "end": 28.304
+  },
+  {
+   "i": 87,
+   "text": "con",
+   "scene": "web",
+   "line": "5.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 28.304,
+   "end": 28.556
+  },
+  {
+   "i": 88,
+   "text": "tu",
+   "scene": "web",
+   "line": "5.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 28.556,
+   "end": 28.752
+  },
+  {
+   "i": 89,
+   "text": "trabajo,",
+   "scene": "web",
+   "line": "5.1",
+   "speaker": "nar",
+   "key": true,
+   "start": 28.752,
+   "end": 29.172
+  },
+  {
+   "i": 90,
+   "text": "tus",
+   "scene": "web",
+   "line": "5.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 29.172,
+   "end": 29.424
+  },
+  {
+   "i": 91,
+   "text": "opiniones",
+   "scene": "web",
+   "line": "5.1",
+   "speaker": "nar",
+   "key": true,
+   "start": 29.424,
+   "end": 30.012
+  },
+  {
+   "i": 92,
+   "text": "y",
+   "scene": "web",
+   "line": "5.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 30.012,
+   "end": 30.152
+  },
+  {
+   "i": 93,
+   "text": "tu",
+   "scene": "web",
+   "line": "5.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 30.152,
+   "end": 30.348
+  },
+  {
+   "i": 94,
+   "text": "teléfono,",
+   "scene": "web",
+   "line": "5.1",
+   "speaker": "nar",
+   "key": true,
+   "start": 30.348,
+   "end": 30.88
+  },
+  {
+   "i": 95,
+   "text": "para",
+   "scene": "web",
+   "line": "5.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 31.08,
+   "end": 31.293
+  },
+  {
+   "i": 96,
+   "text": "que",
+   "scene": "web",
+   "line": "5.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 31.293,
+   "end": 31.458
+  },
+  {
+   "i": 97,
+   "text": "te",
+   "scene": "web",
+   "line": "5.1",
+   "speaker": "nar",
+   "key": true,
+   "start": 31.458,
+   "end": 31.623
+  },
+  {
+   "i": 98,
+   "text": "vean",
+   "scene": "web",
+   "line": "5.1",
+   "speaker": "nar",
+   "key": true,
+   "start": 31.623,
+   "end": 31.883
+  },
+  {
+   "i": 99,
+   "text": "antes",
+   "scene": "web",
+   "line": "5.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 31.883,
+   "end": 32.19
+  },
+  {
+   "i": 100,
+   "text": "de",
+   "scene": "web",
+   "line": "5.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 32.19,
+   "end": 32.355
+  },
+  {
+   "i": 101,
+   "text": "llamar",
+   "scene": "web",
+   "line": "5.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 32.355,
+   "end": 32.662
+  },
+  {
+   "i": 102,
+   "text": "al",
+   "scene": "web",
+   "line": "5.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 32.662,
+   "end": 32.827
+  },
+  {
+   "i": 103,
+   "text": "otro.",
+   "scene": "web",
+   "line": "5.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 32.827,
+   "end": 33.04
+  },
+  {
+   "i": 104,
+   "text": "¿Y",
+   "scene": "marca",
+   "line": "6.0",
+   "speaker": "pro",
+   "key": false,
+   "start": 33.44,
+   "end": 33.567
+  },
+  {
+   "i": 105,
+   "text": "quién",
+   "scene": "marca",
+   "line": "6.0",
+   "speaker": "pro",
+   "key": true,
+   "start": 33.567,
+   "end": 33.846
+  },
+  {
+   "i": 106,
+   "text": "me",
+   "scene": "marca",
+   "line": "6.0",
+   "speaker": "pro",
+   "key": false,
+   "start": 33.846,
+   "end": 34.024
+  },
+  {
+   "i": 107,
+   "text": "la",
+   "scene": "marca",
+   "line": "6.0",
+   "speaker": "pro",
+   "key": false,
+   "start": 34.024,
+   "end": 34.202
+  },
+  {
+   "i": 108,
+   "text": "hace?",
+   "scene": "marca",
+   "line": "6.0",
+   "speaker": "pro",
+   "key": false,
+   "start": 34.202,
+   "end": 34.43
+  },
+  {
+   "i": 109,
+   "text": "Nuven",
+   "scene": "marca",
+   "line": "6.1",
+   "speaker": "nar",
+   "key": true,
+   "start": 34.84,
+   "end": 35.269
+  },
+  {
+   "i": 110,
+   "text": "Digital.",
+   "scene": "marca",
+   "line": "6.1",
+   "speaker": "nar",
+   "key": true,
+   "start": 35.269,
+   "end": 35.83
+  },
+  {
+   "i": 111,
+   "text": "Webs",
+   "scene": "valores",
+   "line": "7.0",
+   "speaker": "nar",
+   "key": false,
+   "start": 36.13,
+   "end": 36.476
+  },
+  {
+   "i": 112,
+   "text": "a",
+   "scene": "valores",
+   "line": "7.0",
+   "speaker": "nar",
+   "key": true,
+   "start": 36.476,
+   "end": 36.633
+  },
+  {
+   "i": 113,
+   "text": "medida,",
+   "scene": "valores",
+   "line": "7.0",
+   "speaker": "nar",
+   "key": true,
+   "start": 36.633,
+   "end": 37.105
+  },
+  {
+   "i": 114,
+   "text": "rápidas,",
+   "scene": "valores",
+   "line": "7.0",
+   "speaker": "nar",
+   "key": true,
+   "start": 37.105,
+   "end": 37.639
+  },
+  {
+   "i": 115,
+   "text": "pensadas",
+   "scene": "valores",
+   "line": "7.0",
+   "speaker": "nar",
+   "key": false,
+   "start": 37.639,
+   "end": 38.237
+  },
+  {
+   "i": 116,
+   "text": "para",
+   "scene": "valores",
+   "line": "7.0",
+   "speaker": "nar",
+   "key": false,
+   "start": 38.237,
+   "end": 38.52
+  },
+  {
+   "i": 117,
+   "text": "que",
+   "scene": "valores",
+   "line": "7.0",
+   "speaker": "nar",
+   "key": false,
+   "start": 38.52,
+   "end": 38.74
+  },
+  {
+   "i": 118,
+   "text": "te",
+   "scene": "valores",
+   "line": "7.0",
+   "speaker": "nar",
+   "key": true,
+   "start": 38.74,
+   "end": 38.96
+  },
+  {
+   "i": 119,
+   "text": "encuentren…",
+   "scene": "valores",
+   "line": "7.0",
+   "speaker": "nar",
+   "key": true,
+   "start": 38.96,
+   "end": 39.62
+  },
+  {
+   "i": 120,
+   "text": "y",
+   "scene": "valores",
+   "line": "7.0",
+   "speaker": "nar",
+   "key": false,
+   "start": 39.87,
+   "end": 40.014
+  },
+  {
+   "i": 121,
+   "text": "te",
+   "scene": "valores",
+   "line": "7.0",
+   "speaker": "nar",
+   "key": true,
+   "start": 40.014,
+   "end": 40.216
+  },
+  {
+   "i": 122,
+   "text": "llamen.",
+   "scene": "valores",
+   "line": "7.0",
+   "speaker": "nar",
+   "key": true,
+   "start": 40.216,
+   "end": 40.59
+  },
+  {
+   "i": 123,
+   "text": "Veinte",
+   "scene": "cierre",
+   "line": "8.0",
+   "speaker": "nar",
+   "key": true,
+   "start": 40.91,
+   "end": 41.346
+  },
+  {
+   "i": 124,
+   "text": "años",
+   "scene": "cierre",
+   "line": "8.0",
+   "speaker": "nar",
+   "key": true,
+   "start": 41.346,
+   "end": 41.666
+  },
+  {
+   "i": 125,
+   "text": "de",
+   "scene": "cierre",
+   "line": "8.0",
+   "speaker": "nar",
+   "key": false,
+   "start": 41.666,
+   "end": 41.87
+  },
+  {
+   "i": 126,
+   "text": "oficio",
+   "scene": "cierre",
+   "line": "8.0",
+   "speaker": "nar",
+   "key": false,
+   "start": 41.87,
+   "end": 42.306
+  },
+  {
+   "i": 127,
+   "text": "merecen",
+   "scene": "cierre",
+   "line": "8.0",
+   "speaker": "nar",
+   "key": false,
+   "start": 42.306,
+   "end": 42.742
+  },
+  {
+   "i": 128,
+   "text": "ser",
+   "scene": "cierre",
+   "line": "8.0",
+   "speaker": "nar",
+   "key": true,
+   "start": 42.742,
+   "end": 43.004
+  },
+  {
+   "i": 129,
+   "text": "vistos.",
+   "scene": "cierre",
+   "line": "8.0",
+   "speaker": "nar",
+   "key": true,
+   "start": 43.004,
+   "end": 43.44
+  },
+  {
+   "i": 130,
+   "text": "Escríbenos",
+   "scene": "cierre",
+   "line": "8.1",
+   "speaker": "nar",
+   "key": true,
+   "start": 43.76,
+   "end": 44.342
+  },
+  {
+   "i": 131,
+   "text": "y",
+   "scene": "cierre",
+   "line": "8.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 44.342,
+   "end": 44.48
+  },
+  {
+   "i": 132,
+   "text": "hablamos",
+   "scene": "cierre",
+   "line": "8.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 44.48,
+   "end": 44.951
+  },
+  {
+   "i": 133,
+   "text": "de",
+   "scene": "cierre",
+   "line": "8.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 44.951,
+   "end": 45.145
+  },
+  {
+   "i": 134,
+   "text": "tu",
+   "scene": "cierre",
+   "line": "8.1",
+   "speaker": "nar",
+   "key": false,
+   "start": 45.145,
+   "end": 45.339
+  },
+  {
+   "i": 135,
+   "text": "proyecto.",
+   "scene": "cierre",
+   "line": "8.1",
+   "speaker": "nar",
+   "key": true,
+   "start": 45.339,
+   "end": 45.81
+  }
+ ],
+ "envelope": "assets/envelope.json"
+}
