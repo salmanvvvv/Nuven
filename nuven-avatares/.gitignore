@@ -1,5 +1,6 @@
 node_modules
 renders
+out/*.mp4.tmp
 .hyperframes
 snapshots
 models

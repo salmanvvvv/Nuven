@@ -1,7 +1,8 @@
 {
  "_info": "Generado por scripts/timing.py a partir de assets/voz.mp3 y content/guion.json. No editar a mano.",
  "audio": "assets/voz.mp3",
- "duration": 45.949,
+ "duration": 47.449,
+ "voice_length": 45.949,
  "speech": [
   0.05,
   45.81
@@ -68,7 +69,7 @@
    "vo_start": 40.91,
    "vo_end": 45.81,
    "start": 40.64,
-   "end": 45.949
+   "end": 47.449
   }
  ],
  "lines": [
@@ -303,8 +304,8 @@
     49,
     50
    ],
-   "start": 15.569,
-   "end": 16.232
+   "start": 15.692,
+   "end": 16.41
   },
   {
    "text": "móvil",
@@ -313,7 +314,7 @@
    "words": [
     56
    ],
-   "start": 17.588,
+   "start": 17.625,
    "end": 17.89
   },
   {
@@ -719,7 +720,7 @@
   },
   {
    "start": 14.09,
-   "end": 15.951,
+   "end": 16.106,
    "speaker": "nar",
    "rows": [
     [
@@ -737,8 +738,8 @@
    "text": "El cliente no ha visto tus veinte"
   },
   {
-   "start": 15.951,
-   "end": 17.588,
+   "start": 16.106,
+   "end": 17.625,
    "speaker": "nar",
    "rows": [
     [
@@ -755,7 +756,7 @@
    "text": "años… te ha buscado en el"
   },
   {
-   "start": 17.588,
+   "start": 17.625,
    "end": 19.55,
    "speaker": "nar",
    "rows": [
@@ -1057,7 +1058,7 @@
   },
   {
    "start": 45.339,
-   "end": 45.949,
+   "end": 46.61,
    "speaker": "nar",
    "rows": [
     [
@@ -1506,7 +1507,7 @@
    "speaker": "nar",
    "key": false,
    "start": 14.09,
-   "end": 14.268
+   "end": 14.283
   },
   {
    "i": 44,
@@ -1515,8 +1516,8 @@
    "line": "2.1",
    "speaker": "nar",
    "key": false,
-   "start": 14.268,
-   "end": 14.702
+   "start": 14.283,
+   "end": 14.753
   },
   {
    "i": 45,
@@ -1525,8 +1526,8 @@
    "line": "2.1",
    "speaker": "nar",
    "key": false,
-   "start": 14.702,
-   "end": 14.88
+   "start": 14.753,
+   "end": 14.946
   },
   {
    "i": 46,
@@ -1535,8 +1536,8 @@
    "line": "2.1",
    "speaker": "nar",
    "key": false,
-   "start": 14.88,
-   "end": 15.008
+   "start": 14.946,
+   "end": 15.084
   },
   {
    "i": 47,
@@ -1545,8 +1546,8 @@
    "line": "2.1",
    "speaker": "nar",
    "key": false,
-   "start": 15.008,
-   "end": 15.339
+   "start": 15.084,
+   "end": 15.443
   },
   {
    "i": 48,
@@ -1555,8 +1556,8 @@
    "line": "2.1",
    "speaker": "nar",
    "key": false,
-   "start": 15.339,
-   "end": 15.569
+   "start": 15.443,
+   "end": 15.692
   },
   {
    "i": 49,
@@ -1565,8 +1566,8 @@
    "line": "2.1",
    "speaker": "nar",
    "key": true,
-   "start": 15.569,
-   "end": 15.951
+   "start": 15.692,
+   "end": 16.106
   },
   {
    "i": 50,
@@ -1575,8 +1576,8 @@
    "line": "2.1",
    "speaker": "nar",
    "key": true,
-   "start": 15.951,
-   "end": 16.232
+   "start": 16.106,
+   "end": 16.41
   },
   {
    "i": 51,
@@ -1585,8 +1586,8 @@
    "line": "2.1",
    "speaker": "nar",
    "key": false,
-   "start": 16.232,
-   "end": 16.41
+   "start": 16.75,
+   "end": 16.892
   },
   {
    "i": 52,
@@ -1595,8 +1596,8 @@
    "line": "2.1",
    "speaker": "nar",
    "key": false,
-   "start": 16.75,
-   "end": 16.866
+   "start": 16.892,
+   "end": 16.994
   },
   {
    "i": 53,
@@ -1605,8 +1606,8 @@
    "line": "2.1",
    "speaker": "nar",
    "key": false,
-   "start": 16.866,
-   "end": 17.262
+   "start": 16.994,
+   "end": 17.34
   },
   {
    "i": 54,
@@ -1615,8 +1616,8 @@
    "line": "2.1",
    "speaker": "nar",
    "key": false,
-   "start": 17.262,
-   "end": 17.425
+   "start": 17.34,
+   "end": 17.483
   },
   {
    "i": 55,
@@ -1625,8 +1626,8 @@
    "line": "2.1",
    "speaker": "nar",
    "key": false,
-   "start": 17.425,
-   "end": 17.588
+   "start": 17.483,
+   "end": 17.625
   },
   {
    "i": 56,
@@ -1635,7 +1636,7 @@
    "line": "2.1",
    "speaker": "nar",
    "key": true,
-   "start": 17.588,
+   "start": 17.625,
    "end": 17.89
   },
   {

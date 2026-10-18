@@ -28,7 +28,8 @@ src = ROOT / cfg["audio"]
 
 raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(src), "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout
 audio = np.frombuffer(raw, dtype=np.float32).copy()
-duration = len(audio) / SR
+voice_len = len(audio) / SR
+duration = voice_len + cfg.get("tail", 0)  # the video holds the end card in silence after the voice
 
 # ── 1 · pauses ──────────────────────────────────────────────────────
 hop = SR // 100
@@ -145,7 +146,7 @@ if asr_path.exists():
             owner[blk.a + k] = asr_chunk[blk.b + k]
     for k in range(len(owner)):  # unmatched words follow their own sentence: the previous word's chunk, or the next one at a sentence start
         if owner[k] is None:
-            same_line = k > 0 and units[k - 1]["line"] == units[k]["line"]
+            same_line = k > 0 and units[k - 1]["line"] == units[k]["line"] and not re.search(r"[,;:…]$", units[k - 1]["text"])
             owner[k] = owner[k - 1] if same_line else next((o for o in owner[k:] if o is not None), owner[k - 1])
     for k in range(1, len(owner)):  # keep it monotonic
         owner[k] = max(owner[k], owner[k - 1])
@@ -233,7 +234,7 @@ for a, b in zip(cards, cards[1:]):
 cards[-1]["end"] = r3(min(duration, cards[-1]["end"] + 0.8))
 
 # ── 5 · envelope (60 Hz, 0–1, smoothed with fast attack / slower release) ──
-n_env = int(np.ceil(duration * FPS_ENV))
+n_env = int(np.ceil(voice_len * FPS_ENV))
 seg = SR // FPS_ENV
 env = np.array([np.sqrt(np.mean(audio[i * seg : (i + 1) * seg] ** 2)) if i * seg < len(audio) else 0 for i in range(n_env)])
 env = env / (np.percentile(env, 98) + 1e-9)
@@ -246,7 +247,7 @@ for v in np.clip(env, 0, 1.2):
 # ── outputs ─────────────────────────────────────────────────────────
 timing = {
     "_info": "Generado por scripts/timing.py a partir de assets/voz.mp3 y content/guion.json. No editar a mano.",
-    "audio": cfg["audio"], "duration": r3(duration), "speech": [r3(sp_start), r3(sp_end)],
+    "audio": cfg["audio"], "duration": r3(duration), "voice_length": r3(voice_len), "speech": [r3(sp_start), r3(sp_end)],
     "scenes": scenes, "lines": lines, "keywords": keywords, "captions": cards, "words": words,
     "envelope": "assets/envelope.json",
 }

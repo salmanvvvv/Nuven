@@ -1,5 +1,5 @@
 {
-  "_info": "Fuente del guion para scripts/timing.py. Texto exacto de assets/voz.mp3. *palabra* o *varias palabras* = palabra clave (resaltado en subtítulos y disparador de animación). speaker: pro = protagonista, nar = narradora. Si cambias la voz: actualiza el texto aquí y ejecuta npm run timing.",
+  "_info": "Fuente del guion para scripts/timing.py. Texto exacto de assets/voz.mp3. *palabra* o *varias palabras* = palabra clave (resaltado en subtítulos y disparador de animación). speaker: pro = frase del comerciante (Martín), nar = narración; la voz es siempre la de la narradora. tail = segundos de silencio tras la voz (tarjeta final). Si cambias la voz: actualiza el texto aquí y ejecuta npm run timing.",
   "audio": "assets/voz.mp3",
   "scenes": [
     {
@@ -115,5 +115,6 @@
         }
       ]
     }
-  ]
+  ],
+  "tail": 1.5
 }
