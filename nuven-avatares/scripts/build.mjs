@@ -162,7 +162,12 @@ for (const o of Object.keys(VARIANTS)) {
 }
 
 // ── voiceover carve: the music bed dips under the voice (/hyperframes-audio) ──
-const carve = join(homedir(), ".claude/skills/hyperframes-audio/scripts/carve.mjs");
+// carve.mjs moved from hyperframes-audio to media-use; the repo keeps a copy under .claude/skills
+const carve = [
+  join(root, "../.claude/skills/media-use/audio/scripts/carve.mjs"),
+  join(homedir(), ".claude/skills/media-use/audio/scripts/carve.mjs"),
+  join(homedir(), ".claude/skills/hyperframes-audio/scripts/carve.mjs"),
+].find((p) => existsSync(p)) ?? "";
 if (existsSync(carve) && existsSync(join(root, "assets/audio/voz-master.wav"))) {
   execFileSync("node", [carve, "--comp", join(root, "index.html"), "--bed", "music", "--voice", "voz", "--strength", "0.7"], { cwd: root, stdio: ["ignore", "ignore", "inherit"] });
   const tag = /<audio\b[^>]*\bid="music"[^>]*><\/audio>/;

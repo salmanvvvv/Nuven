@@ -82,7 +82,12 @@ if (!existsSync(join(root, "vertical/assets"))) symlinkSync("../assets", join(ro
 writeFileSync(join(root, "vertical/index.html"), render("v"));
 
 // ── voiceover carve on the music bed (same audio in both cuts) ──
-const carve = join(homedir(), ".claude/skills/hyperframes-audio/scripts/carve.mjs");
+// carve.mjs moved from hyperframes-audio to media-use; the repo keeps a copy under .claude/skills
+const carve = [
+  join(root, "../.claude/skills/media-use/audio/scripts/carve.mjs"),
+  join(homedir(), ".claude/skills/media-use/audio/scripts/carve.mjs"),
+  join(homedir(), ".claude/skills/hyperframes-audio/scripts/carve.mjs"),
+].find((p) => existsSync(p)) ?? "";
 if (existsSync(carve)) {
   execFileSync("node", [carve, "--comp", join(root, "index.html"), "--bed", "music", "--voice", "narration", "--strength", "0.7"], {
     cwd: root,
